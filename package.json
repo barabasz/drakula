@@ -1,0 +1,21 @@
+{
+  "name": "theme-drakula",
+  "displayName": "Drakula",
+  "description": "Darker Dracula fork",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Drakula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Drakula-color-theme.json"
+      }
+    ]
+  }
+}
