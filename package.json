@@ -1,17 +1,24 @@
 {
-  "name": "theme-drakula",
+  "name": "drakula-theme",
   "displayName": "Drakula",
   "description": "Darker Dracula fork",
   "homepage": "https://github.com/barabasz/drakula",
-  "publisher": "drakula-theme",
+  "publisher": "barabasz",
   "license": "MIT",
   "version": "0.0.1",
+	"scripts": {
+		"build": "node ./scripts/build.js",
+		"lint": "node ./scripts/lint.js",
+		"package": "vsce package -o ./bin/drakula.vsix",
+		"vscode:prepublish": "npm run build",
+		"vsce-publish": "vsce publish"
+	},
   "repository": {
     "type": "git",
     "url": "https://github.com/barabasz/drakula.git"
   },
   "engines": {
-    "vscode": "^1.98.0"
+    "vscode": "^1.90.0"
   },
   "categories": [
     "Themes"
@@ -29,8 +36,11 @@
       {
         "label": "Drakula",
         "uiTheme": "vs-dark",
-        "path": "./themes/Drakula-color-theme.json"
+        "path": "./theme/drakula-theme.json"
       }
     ]
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
   }
 }

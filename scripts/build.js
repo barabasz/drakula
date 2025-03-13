@@ -13,7 +13,7 @@ module.exports = async () => {
 
     return Promise.all([
         fs.promises.writeFile(
-            path.join(THEME_DIR, 'Drakula-color-theme.json'),
+            path.join(THEME_DIR, 'drakula-theme.json'),
             JSON.stringify(base, null, 4)
         )
     ]);

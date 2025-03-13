@@ -8,7 +8,7 @@ module.exports = async () => {
         'utf-8'
     );
 
-    const base = load(yamlFile, { schema });
+    const base = load(yamlFile, { DEFAULT_SCHEMA });
 
     for (const key of Object.keys(base.colors)) {
         if (!base.colors[key]) {
@@ -16,7 +16,5 @@ module.exports = async () => {
         }
     }
 
-    return {
-        base
-    };
-};
+    return {base};
+}
