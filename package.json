@@ -3,7 +3,7 @@
 	"displayName": "Drakula",
 	"description": "Dark Dracula theme for Visual Studio Code",
 	"license": "MIT",
-	"version": "0.4.1",
+	"version": "0.4.2",
 	"publisher": "barabasz",
 	"scripts": {
 		"build": "node ./scripts/build.js",
@@ -27,14 +27,19 @@
 		"Themes"
 	],
 	"keywords": [
+		"clean",
+		"color-theme",
+		"contrast",
+		"dark",
+		"darker",
 		"dracula",
-		"dracula theme",
 		"drakula",
+		"flat",
+		"minimal",
+		"night",
+		"purple",
 		"theme",
-		"dark theme",
-		"flat theme",
-		"night theme",
-		"purple theme"
+		"tokyo"
 	],
 	"icon": "img/icon.png",
 	"contributes": {

@@ -1,6 +1,6 @@
 # Drakula
 
-**Drakula** is a dark theme for [Visual Studio Code](https://github.com/microsoft/vscode). This theme is recommended for people who like the [Dracula](https://en.wikipedia.org/wiki/Dracula_(color_scheme)) color scheme , created by [Zeno Rocha](https://zenorocha.com), but prefer more flat and darker UI than the one available in most themes using this scheme. 
+**Drakula** is a dark theme for [Visual Studio Code](https://github.com/microsoft/vscode). This theme is recommended for people who like the [Dracula](https://en.wikipedia.org/wiki/Dracula_(color_scheme)) color scheme, created by [Zeno Rocha](https://zenorocha.com), but prefer more flat and darker UI than the one available in most themes using this scheme. Inspirations include [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night), [Github](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) and [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme).
 
 **Primary foreground colors**:
 

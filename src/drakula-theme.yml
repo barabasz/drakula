@@ -393,7 +393,7 @@ colors:
   editor.selectionBackground: *PurpleT25 # *DarkPurple3
   # Color of the selected text for high contrast.
   editor.selectionForeground:
-  # Color for regions with the same content as the selection TRANSAPRENT
+  # Color for regions with the same content as the selection. TRANSAPRENT
   editor.selectionHighlightBackground: *PurpleT20
   # Border color for regions with the same content as the selection
   editor.selectionHighlightBorder:
@@ -402,15 +402,15 @@ colors:
 
   # Background color of a symbol during read-access, for example when reading a variable. TRANSPARENT
   editor.wordHighlightBackground: *PurpleT05
-  # Border color of a symbol during read-access, for example when reading a variable.
+  # Border color of a symbol during read-access, for example when reading a variable
   editor.wordHighlightBorder: *PurpleT30 # *DarkPurple4
   # Background color of a symbol during write-access, for example when writing to a variable. TRANSPARENT
   editor.wordHighlightStrongBackground: 
-  # Border color of a symbol during write-access, for example when writing to a variable.
+  # Border color of a symbol during write-access, for example when writing to a variable
   editor.wordHighlightStrongBorder:
   # Background color of a textual occurrence for a symbol TRANSPARENT
   editor.wordHighlightTextBackground: 
-  # Border color of a textual occurrence for a symbol.
+  # Border color of a textual occurrence for a symbol
   editor.wordHighlightTextBorder: 
 
   # Background color for folded ranges. TRANSPARENT
@@ -420,8 +420,8 @@ colors:
   editor.findMatchBorder: *Purple
   # Color of the current search match
   editor.findMatchBackground: *DarkPurple2
-  # Color of the other search matches
-  editor.findMatchHighlightBackground: *DarkPurple3
+  # Color of the other search matches. TRANSPARENT
+  editor.findMatchHighlightBackground: *PurpleT25
   
   # Color the range limiting the search
   editor.findRangeHighlightBackground:
@@ -540,10 +540,14 @@ colors:
 # Editor Widget Colors
 # -----------------------------------------------------------------------------
 
+  # Foreground color of editor widgets, such as find/replace
+  editorWidget.foreground:
   # Background color of editor widgets, such as Find/Replace
   editorWidget.background: *DarkPurple
   # Border color of the editor widget unless the widget does not contain a border or defines its own border color
-  editorWidgetBorder: *DarkPurple3
+  editorWidget.border: *DarkPurple3
+  # Border color of the resize bar of editor widgets
+  editorWidget.resizeBorder: *Purple
 
   # Background color of the suggestion widget
   editorSuggestWidget.background:
@@ -572,9 +576,6 @@ colors:
   editorMarkerNavigationError.background:
   # Editor marker navigation widget warning color
   editorMarkerNavigationWarning.background:
-
-  # Border color of the resize bar of editor widgets
-  editorWidget.resizeBorder: *Purple
 
 # -----------------------------------------------------------------------------
 # Peek View Colors
