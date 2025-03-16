@@ -16,5 +16,7 @@ module.exports = async () => {
         }
     }
 
+    delete base.drakula;
+
     return {base};
 }

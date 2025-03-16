@@ -5,6 +5,37 @@ All notable changes to the [Drakula](https://drakula.barabasz.in) extension will
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.7] - 2025-03-16
+
+### Changed
+
+- more visually pleasing colors and borders for editor selection and search.
+- consistent breadcrumb colors
+- improved line and separator colors
+- improved theme icon
+- less aggressive current line highlight style
+
+### Fixed
+
+- List & Trees colors
+
+## [0.3.6] - 2025-03-16
+
+### Added 
+
+- editor Multi Cursor colors
+
+### Changed
+
+- improved tabs design (more flat experience)
+- Activity Bar colors
+- (just a little bit) brighter background for Editor & Side Bar
+- more subtle lines
+
+### Fixed
+
+- Line numbers colors
+
 ## [0.3.5] - 2025-03-14
 
 ### Fixed

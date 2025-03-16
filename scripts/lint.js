@@ -6,7 +6,7 @@ const THEME_COLOR_REFERENCE_URL =
 
 const NOT_THEME_KEYS = [
     'workbench.colorCustomizations',
-    'editor.tokenColorCustomizations',
+    'editor.tokenColorCustomizations'
 ];
 
 const get = url =>

@@ -1,5 +1,6 @@
 $schema: vscode://schemas/color-theme
 name: Drakula
+description: A dark Dracula theme for Visual Studio Code
 author: github/barabasz
 semanticClass: theme.drakula
 semanticHighlighting: true
@@ -36,20 +37,28 @@ drakula:
     - &PinkBright   '#FF92DF' # Bright Magenta
     - &CyanBright   '#A4FFFF'
   # https://coolors.co/241c30-30253f-3c2f4f-48385e-5e4c7b-735f98
-  darkpurples:
-    - &DarkPurple   '#241C30'
+  darkPurples:
+    - &DarkPurple   '#241C30' # Active tab
     - &DarkPurple1  '#30253f'
     - &DarkPurple2  '#3C2F4F'
-    - &DarkPurple3  '#48385E'
+    - &DarkPurple3  '#48385E' # Light lines
     - &DarkPurple4  '#5E4C7B' # Buttons
     - &DarkPurple5  '#735F98' # Badges
     - &DarkPurple6  '#9879C9' # 
+  purplesTransparent:
+    - &PurpleT03    '#BD93F908' #  3%
+    - &PurpleT05    '#BD93F90D' #  5%
+    - &PurpleT10    '#BD93F91A' # 10%
+    - &PurpleT15    '#BD93F926' # 15%
+    - &PurpleT20    '#BD93F933' # 20%
+    - &PurpleT25    '#BD93F940' # 25%
+    - &PurpleT30    '#BD93F94D' # 30%
+    - &PurpleT50    '#BD93F980' # 50%
+    - &PurpleT80    '#BD93F9CC' # 80%
   # https://coolors.co/0c0a10-120f18-181320-1e1828
-  blackpurples:
-    - &BlackPurple  '#0C0A10' # Side Bar background
-    - &BlackPurple1 '#120F18' # Editor background
-    - &BlackPurple2 '#181320' # Status Bar & Activity Bar background
-    - &BlackPurple3 '#1E1828'
+  blackPurples:
+    - &BlackPurple  '#181320' # Editor & Side Bar background
+    - &BlackPurple1 '#1E1828' # Status Bar & Activity Bar background
   extra:
     - &Salmon       '#FF9999'
     - &Violet       '#DE86E0'
@@ -159,11 +168,11 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Input box background
-  input.background:
+  input.background: *BlackPurple
   # Input box foreground
   input.foreground:
   # Input box border
-  input.border:
+  input.border: *DarkPurple3
   # Input box foreground color for placeholder text
   input.placeholderForeground:
   # Border color of activated options in input fields
@@ -192,13 +201,14 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Scroll Bar shadow to indicate that the view is scrolled
-  scrollbar.shadow:
+  scrollbar.shadow: *DarkPurple
+  
   # Slider background color when active
   scrollbarSlider.activeBackground:
   # Slider background color
-  scrollbarSlider.background:
+  scrollbarSlider.background: *DarkPurple1
   # Slider background color when hovering
-  scrollbarSlider.hoverBackground:
+  scrollbarSlider.hoverBackground: *DarkPurple2
 
 # -----------------------------------------------------------------------------
 # Badge
@@ -221,19 +231,19 @@ colors:
 # -----------------------------------------------------------------------------
 
   # List/Tree background color for the selected item when the list/tree is active
-  list.activeSelectionBackground:
+  list.activeSelectionBackground: *PurpleT30
   # List/Tree foreground color for the selected item when the list/tree is active
   list.activeSelectionForeground:
   # List/Tree drag and drop background when moving items around using the mouse
-  list.dropBackground:
+  list.dropBackground: *PurpleT15
   # List/Tree background color for the focused item when the list/tree is active
   list.focusBackground:
   # List/Tree foreground color of the match highlights when searching inside the list/tree
   list.highlightForeground:
   # List/Tree background when hovering over items using the mouse
-  list.hoverBackground:
+  list.hoverBackground: *PurpleT10
   # List/Tree background color for the selected item when the list/tree is inactive
-  list.inactiveSelectionBackground:
+  list.inactiveSelectionBackground: *PurpleT20
   # List/Tree foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not
   list.inactiveSelectionForeground:
   # Color of warning decorations in the explorer
@@ -249,14 +259,14 @@ colors:
 # Activity Bar
 # -----------------------------------------------------------------------------
 
+  # Activity bar foreground color (for example used for the icons)
+  activityBar.foreground: *DarkPurple5
   # Activity Bar background color
-  activityBar.background: *BlackPurple2
+  activityBar.background: *BlackPurple1
   # Activity bar item foreground color when it is inactive
   activityBar.inactiveForeground:
   # Drag and drop feedback color for the Activity Bar items
   activityBar.dropBackground:
-  # Activity bar foreground color (for example used for the icons)
-  activityBar.foreground:
   # Activity Bar border color with the Side Bar
   activityBar.border:
   # Activity Bar indicator color
@@ -264,9 +274,18 @@ colors:
   # Activity Bar indicator background color
   activityBar.activeBackground:
   # Activity notification badge background color
-  activityBarBadge.background: *DarkPurple4
+
+  activityBarBadge.background: *DarkPurple6
   # Activity notification badge foreground color
-  activityBarBadge.foreground:
+  activityBarBadge.foreground: *BlackPurple
+  # Foreground color of the warning activity badge
+  activityWarningBadge.foreground:
+  # Background color of the warning activity badge
+  activityWarningBadge.background: *Orange
+  # Foreground color of the error activity badge
+  activityErrorBadge.foreground:
+  # Background color of the error activity badge
+  activityErrorBadge.background: *Red
 
 # -----------------------------------------------------------------------------
 # Side Bar
@@ -277,15 +296,31 @@ colors:
   # Side Bar foreground color. The Side Bar is the container for views like Explorer and Search
   sideBar.foreground:
   # Side Bar border color on the side separating the editor
-  sideBar.border:
+  sideBar.border: *DarkPurple
+
   # Side Bar title foreground color
-  sideBarTitle.foreground:
+  sideBarTitle.foreground: *DarkPurple6
+  # Side bar title background color. The side bar is the container for views like explorer and search.
+  sideBarTitle.background: *BlackPurple1
+  # Side bar title border color on the bottom, separating the title from the views. The side bar is the container for views like explorer and search.
+  sideBarTitle.border: *DarkPurple3
+
   # Side Bar section header background color
-  sideBarSectionHeader.background:
+  sideBarSectionHeader.background: *DarkPurple
   # Side Bar section header foreground color
-  sideBarSectionHeader.foreground:
+  sideBarSectionHeader.foreground: *DarkPurple6
   # Side bar section header border color
   sideBarSectionHeader.border:
+
+  # Border color between the activity bar at the top/bottom and the views.
+  sideBarActivityBarTop.border:
+
+  # Background color of sticky scroll in the side bar
+  sideBarStickyScroll.background: *BlackPurple1
+  # Border color of sticky scroll in the side bar
+  sideBarStickyScroll.border: *DarkPurple4
+  # Shadow color of sticky scroll in the side bar
+  sideBarStickyScroll.shadow:
 
 # -----------------------------------------------------------------------------
 # Editor Groups
@@ -294,36 +329,38 @@ colors:
   # Background color of an editor group. The background color shows up when dragging editor groups around
   editorGroup.background:
   # Color to separate multiple editor groups from each other
-  editorGroup.border:
+  editorGroup.border: *DarkPurple
   # Background color when dragging editors around
   editorGroup.dropBackground:
   # Background color of the editor group title header when Tabs are disabled
   editorGroupHeader.noTabsBackground:
   # Background color of the Tabs container
-  editorGroupHeader.tabsBackground: *BlackPurple
+  editorGroupHeader.tabsBackground: *BlackPurple1
   # Border color of the editor group title header when tabs are enabled. Editor groups are the containers of editors
-  editorGroupHeader.tabsBorder: *BlackPurple2
+  editorGroupHeader.tabsBorder: *DarkPurple3
 
 # -----------------------------------------------------------------------------
 # Editor Tabs
 # -----------------------------------------------------------------------------
 
   # Active Tab background color
-  tab.activeBackground: *BlackPurple3
+  tab.activeBackground: *DarkPurple
   # Active Tab foreground color in an active group
-  tab.activeForeground:
+  tab.activeForeground: *DarkPurple6
   # Border to separate Tabs from each other
-  tab.border:
+  tab.border: *BlackPurple
   # A border drawn to the top of the active tab
-  tab.activeBorderTop: *DarkPurple5
+  tab.activeBorderTop: *Purple
   # A border drawn to the bottom of the active tab
-  tab.activeBorder:
+  tab.activeBorder: *DarkPurple
   # A border drawn to the bottom of the active tab in an editor group that is not focused
-  tab.unfocusedActiveBorder:
+  tab.unfocusedActiveBorder: *DarkPurple
+  # Top border for the active tab in an inactive editor group
+  tab.unfocusedActiveBorderTop: *DarkPurple4
   # Inactive Tab background color
-  tab.inactiveBackground: *BlackPurple2
+  tab.inactiveBackground: *BlackPurple1
   # Inactive Tab foreground color in an active group
-  tab.inactiveForeground:
+  tab.inactiveForeground: *DarkPurple4
   # Active tab foreground color in an inactive editor group
   tab.unfocusedActiveForeground:
   # Inactive tab foreground color in an inactive editor group
@@ -333,31 +370,59 @@ colors:
 # Editor Colors
 # -----------------------------------------------------------------------------
 
-  editor.foreground:
-  editor.background: *BlackPurple1
-  editorLineNumber.foreground:
-  editorCursor.foreground:
+  # Editor default foreground color
+  editor.foreground: *White
+  # Editor background color
+  editor.background: *BlackPurple
+
+  # Color of editor line numbers
+  editorLineNumber.foreground: *DarkPurple3
+  # Color of the active editor line number.
+  editorLineNumber.activeForeground: *DarkPurple6
+  
+  # Color of the editor cursor
+  editorCursor.foreground: *PinkBright
+  # The background color of the editor cursor
+  editorCursor.background: 
+  # Color of the primary editor cursor when multiple cursors are present
+  editorMultiCursor.primary.foreground: *YellowBright
+  # Color of secondary editor cursors when multiple cursors are present
+  editorMultiCursor.secondary.foreground: *PinkBright
 
   # Color of the editor selection
-  editor.selectionBackground:
-  # Color for regions with the same content as the selection (must be transparent)
-  editor.selectionHighlightBackground:
+  editor.selectionBackground: *PurpleT25 # *DarkPurple3
+  # Color of the selected text for high contrast.
+  editor.selectionForeground:
+  # Color for regions with the same content as the selection TRANSAPRENT
+  editor.selectionHighlightBackground: *PurpleT20
+  # Border color for regions with the same content as the selection
+  editor.selectionHighlightBorder:
   # Color of the selection in an inactive editor
   editor.inactiveSelectionBackground:
-  # Background color for folded ranges (must be transparent)
-  editor.foldBackground:
 
-  # Background color of a symbol during read-access, for example when reading a variable
-  editor.wordHighlightBackground:
-  # Background color of a symbol during write-access, for example when writing to a variable
-  editor.wordHighlightStrongBackground:
+  # Background color of a symbol during read-access, for example when reading a variable. TRANSPARENT
+  editor.wordHighlightBackground: *PurpleT05
+  # Border color of a symbol during read-access, for example when reading a variable.
+  editor.wordHighlightBorder: *PurpleT30 # *DarkPurple4
+  # Background color of a symbol during write-access, for example when writing to a variable. TRANSPARENT
+  editor.wordHighlightStrongBackground: 
+  # Border color of a symbol during write-access, for example when writing to a variable.
+  editor.wordHighlightStrongBorder:
+  # Background color of a textual occurrence for a symbol TRANSPARENT
+  editor.wordHighlightTextBackground: 
+  # Border color of a textual occurrence for a symbol.
+  editor.wordHighlightTextBorder: 
+
+  # Background color for folded ranges. TRANSPARENT
+  editor.foldBackground: *PurpleT20
 
   # Border color of the current search match
-  editor.findMatchBorder:
+  editor.findMatchBorder: *Purple
   # Color of the current search match
-  editor.findMatchBackground:
+  editor.findMatchBackground: *DarkPurple2
   # Color of the other search matches
-  editor.findMatchHighlightBackground:
+  editor.findMatchHighlightBackground: *DarkPurple3
+  
   # Color the range limiting the search
   editor.findRangeHighlightBackground:
 
@@ -365,9 +430,9 @@ colors:
   editor.hoverHighlightBackground:
 
   # Background color for the highlight of line at the cursor position
-  editor.lineHighlightBackground:
+  editor.lineHighlightBackground: *PurpleT03
   # Background color for the border around the line at the cursor position
-  editor.lineHighlightBorder:
+  editor.lineHighlightBorder: *PurpleT05
 
   # Color of active links
   editorLink.activeForeground:
@@ -476,9 +541,9 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Background color of editor widgets, such as Find/Replace
-  editorWidget.background:
+  editorWidget.background: *DarkPurple
   # Border color of the editor widget unless the widget does not contain a border or defines its own border color
-  editorWidgetBorder:
+  editorWidgetBorder: *DarkPurple3
 
   # Background color of the suggestion widget
   editorSuggestWidget.background:
@@ -507,6 +572,9 @@ colors:
   editorMarkerNavigationError.background:
   # Editor marker navigation widget warning color
   editorMarkerNavigationWarning.background:
+
+  # Border color of the resize bar of editor widgets
+  editorWidget.resizeBorder: *Purple
 
 # -----------------------------------------------------------------------------
 # Peek View Colors
@@ -578,7 +646,7 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Standard Status Bar background color
-  statusBar.background: *BlackPurple2
+  statusBar.background: *BlackPurple1
   # Status Bar foreground color
   statusBar.foreground:
   # Status Bar border color separating the Status Bar and editor
@@ -618,7 +686,7 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Title Bar background when the window is active
-  titleBar.activeBackground: *BlackPurple2
+  titleBar.activeBackground: *BlackPurple1
   # Title Bar foreground when the window is active
   titleBar.activeForeground:
   # Title Bar background when the window is inactive
@@ -704,15 +772,15 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Color of breadcrumb items
-  breadcrumb.foreground: 
+  breadcrumb.foreground: *DarkPurple6
   # Breadcrumb background color
-  breadcrumb.background: 
+  breadcrumb.background: *DarkPurple
   # Color of focused breadcrumb items
-  breadcrumb.focusForeground: 
+  breadcrumb.focusForeground: *Purple
   # Color of selected breadcrumb items
   breadcrumb.activeSelectionForeground: 
   # Background color of breadcrumb item picker
-  breadcrumbPicker.background: 
+  breadcrumbPicker.background: *DarkPurple
 
 # -----------------------------------------------------------------------------
 # Misc
