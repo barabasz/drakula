@@ -72,9 +72,9 @@ In the same way you can alter editor behavior by adiding `editor.tokenColorCusto
 
 ```json
 "editor.tokenColorCustomizations": {
-	"[Drakula]": {
-		// your customizations goes here
-	}
+  "[Drakula]": {
+    // your customizations goes here
+  }
 }
 ```
 
