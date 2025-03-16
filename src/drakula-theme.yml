@@ -74,9 +74,9 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Overall border color for focused elements if not overridden by a component
-  focusBorder:
+  focusBorder: *Purple
   # Overall foreground color if not overridden by a component
-  foreground:
+  foreground: *White
   # Overall foreground for disabled elements if not overridden by a component
   disabledForeground:
   # Border color of widgets such as Find/Replace inside the editor
@@ -224,7 +224,7 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Background color of the progress bar shown for long running operations
-  progressBar.background:
+  progressBar.background: *Purple
 
 # -----------------------------------------------------------------------------
 # List & Trees
@@ -244,7 +244,7 @@ colors:
   list.hoverBackground: *PurpleT10
   # List/Tree background color for the selected item when the list/tree is inactive
   list.inactiveSelectionBackground: *PurpleT20
-  # List/Tree foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not
+  # List/Tree foreground color for the selected item when the list/tree is inactive
   list.inactiveSelectionForeground:
   # Color of warning decorations in the explorer
   list.warningForeground:
@@ -252,7 +252,7 @@ colors:
   list.errorForeground:
   # List/Tree foreground when hovering over items using the mouse
   list.hoverForeground:
-  # List/Tree foreground color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not
+  # List/Tree foreground color for the focused item when the list/tree is active
   list.focusForeground:
 
 # -----------------------------------------------------------------------------

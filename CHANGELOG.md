@@ -5,7 +5,14 @@ All notable changes to the [Drakula](https://drakula.barabasz.in) extension will
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.3.7] - 2025-03-16
+## [0.4.1] - 2025-03-17
+
+### Fixed
+
+- widget input background
+- progress bar color
+
+## [0.4.0] - 2025-03-16
 
 ### Changed
 
@@ -17,9 +24,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- List & Trees colors
+- focus border
+- widget borders & shadows
+- list & trees colors
+- scroll bar colors
 
-## [0.3.6] - 2025-03-16
+## [0.3.6] - 2025-03-15
 
 ### Added 
 
@@ -28,8 +38,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - improved tabs design (more flat experience)
-- Activity Bar colors
-- (just a little bit) brighter background for Editor & Side Bar
+- activity bar colors
+- (just a little bit) brighter background for the editor & side bar
 - more subtle lines
 
 ### Fixed
@@ -40,20 +50,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Line colors
-- Background colors
+- line colors
+- background colors
 
 ## [0.3.0] - 2025-01-12
 
 ### Fixed
 
-- New Code colors
+- comment code colors
+- italic font in some contexts
 
 ## [0.2.0] - 2024-12-17
 
 ### Changed
 
-- New UI Design
+- new UI design
+
+### Fixed
+
+- build script
 
 ## [0.1.0] - 2024-12-09
 

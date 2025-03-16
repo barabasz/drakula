@@ -6,6 +6,8 @@
     "semanticClass": "theme.drakula",
     "semanticHighlighting": true,
     "colors": {
+        "focusBorder": "#BD93F9",
+        "foreground": "#F8F8F2",
         "terminal.background": "#282A36",
         "terminal.foreground": "#F8F8F2",
         "terminal.ansiBlack": "#241C30",
