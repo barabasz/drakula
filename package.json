@@ -1,11 +1,10 @@
 {
-  "name": "drakula-theme",
-  "displayName": "Drakula",
-  "description": "Darker Dracula fork",
-  "homepage": "https://github.com/barabasz/drakula",
-  "publisher": "barabasz",
-  "license": "MIT",
-  "version": "0.0.1",
+	"name": "drakula-theme",
+	"displayName": "Drakula",
+	"description": "Darker Dracula fork",
+	"license": "MIT",
+	"version": "0.3.5",
+	"publisher": "barabasz",
 	"scripts": {
 		"build": "node ./scripts/build.js",
 		"lint": "node ./scripts/lint.js",
@@ -13,34 +12,38 @@
 		"vscode:prepublish": "npm run build",
 		"vsce-publish": "vsce publish"
 	},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/barabasz/drakula.git"
-  },
-  "engines": {
-    "vscode": "^1.90.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "keywords": [
-    "dark",
-    "theme",
-    "color-theme",
-    "dracula",
-    "dracula-theme"
-  ],
-  "icon": "icon.png",
-  "contributes": {
-    "themes": [
-      {
-        "label": "Drakula",
-        "uiTheme": "vs-dark",
-        "path": "./theme/drakula-theme.json"
-      }
-    ]
-  },
-  "dependencies": {
-    "js-yaml": "^4.1.0"
-  }
+	"homepage": "https://drakula.barabasz.in",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/barabasz/drakula.git"
+	},
+	"bugs": {
+		"url": "https://github.com/barabasz/drakula/issues"
+	},
+	"engines": {
+		"vscode": "^1.90.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"dark",
+		"theme",
+		"color-theme",
+		"dracula",
+		"dracula-theme"
+	],
+	"icon": "./img/icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Drakula",
+				"uiTheme": "vs-dark",
+				"path": "./theme/drakula-theme.json"
+			}
+		]
+	},
+	"dependencies": {
+		"js-yaml": "^4.1.0"
+	}
 }

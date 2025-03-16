@@ -4,7 +4,7 @@ const { Type, DEFAULT_SCHEMA, load } = require('js-yaml');
 
 module.exports = async () => {
     const yamlFile = await readFile(
-        join(__dirname, '..', 'src', 'drakula.yml'),
+        join(__dirname, '..', 'src', 'drakula-theme.yml'),
         'utf-8'
     );
 
