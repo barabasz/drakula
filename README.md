@@ -129,3 +129,5 @@ Below is an example of disabling the italic font variant for comments:
 ### Rust and C++
 
 ![screenshot](img/rs-cpp.png)
+
+![screenshot](img/icon.png)

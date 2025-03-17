@@ -1,6 +1,6 @@
 $schema: vscode://schemas/color-theme
 name: Drakula
-description: A dark Dracula theme for Visual Studio Code
+description: A dark Dracula theme perfect for night owls and basement dwellers, featuring a sleek and minimalistic design.
 author: github/barabasz
 semanticClass: theme.drakula
 semanticHighlighting: true
@@ -80,19 +80,30 @@ colors:
   # Overall foreground for disabled elements if not overridden by a component
   disabledForeground:
   # Border color of widgets such as Find/Replace inside the editor
-  widget.border:
+  widget.border: *DarkPurple1
   # Shadow color of widgets such as Find/Replace inside the editor
   widget.shadow:
   # Foreground color for description text providing additional information, for example for a label
   descriptionForeground:
   # Background color of text selections in the workbench (for input fields or text areas)
-  selection.background:
+  selection.background: *PurpleT25
   # Overall foreground color for error messages if not overridden by a component
   errorForeground:
   # The default color for icons in the workbench
-  icon.foreground:
+  icon.foreground: *Purple
   # The hover border color for draggable sashes
   sash.hoverBorder:
+
+# -----------------------------------------------------------------------------
+# Banner colors
+# -----------------------------------------------------------------------------
+
+  # Banner background color
+  banner.background: 
+  # Banner foreground color
+  banner.foreground: 
+  # Color for the icon in front of the banner text
+  banner.iconForeground:
 
 # -----------------------------------------------------------------------------
 # Integrated Terminal Colors
@@ -121,6 +132,32 @@ colors:
   terminal.ansiBrightMagenta: *PinkBright
   terminal.ansiBrightCyan: *CyanBright
   terminal.ansiBrightWhite: *White
+
+# -----------------------------------------------------------------------------
+# Command Center
+# -----------------------------------------------------------------------------
+
+  # Background color of the Command Center
+  commandCenter.background: *BlackPurple1
+  # Foreground color of the Command Center
+  commandCenter.foreground: *DarkPurple5
+  # Border color of the Command Center
+  commandCenter.border: *DarkPurple3
+
+  # Active background color of the Command Center
+  commandCenter.activeBackground: *DarkPurple
+  # Active foreground color of the Command Center
+  commandCenter.activeForeground: *Purple
+  # Active border color of the Command Center
+  commandCenter.activeBorder: *DarkPurple5
+
+  # Foreground color of the Command Center when the window is inactive
+  commandCenter.inactiveForeground:
+  # Border color of the Command Center when the window is inactive
+  commandCenter.inactiveBorder: *BlackPurple1
+
+  # Command Center background color when a program is being debugged
+  commandCenter.debuggingBackground:
 
 # -----------------------------------------------------------------------------
 # Contrast Colors
@@ -291,18 +328,20 @@ colors:
 # Side Bar
 # -----------------------------------------------------------------------------
 
+  # The side bar is the container for views like explorer and search
+
   # Side Bar background color
   sideBar.background: *BlackPurple
-  # Side Bar foreground color. The Side Bar is the container for views like Explorer and Search
+  # Side Bar foreground color
   sideBar.foreground:
   # Side Bar border color on the side separating the editor
   sideBar.border: *DarkPurple
 
   # Side Bar title foreground color
   sideBarTitle.foreground: *DarkPurple6
-  # Side bar title background color. The side bar is the container for views like explorer and search.
+  # Side bar title background color.
   sideBarTitle.background: *BlackPurple1
-  # Side bar title border color on the bottom, separating the title from the views. The side bar is the container for views like explorer and search.
+  # Side bar title border color on the bottom, separating the title from the views.
   sideBarTitle.border: *DarkPurple3
 
   # Side Bar section header background color
@@ -310,7 +349,7 @@ colors:
   # Side Bar section header foreground color
   sideBarSectionHeader.foreground: *DarkPurple6
   # Side bar section header border color
-  sideBarSectionHeader.border:
+  sideBarSectionHeader.border: #'#ff0000'
 
   # Border color between the activity bar at the top/bottom and the views.
   sideBarActivityBarTop.border:
@@ -326,7 +365,9 @@ colors:
 # Editor Groups
 # -----------------------------------------------------------------------------
 
-  # Background color of an editor group. The background color shows up when dragging editor groups around
+  # Editor groups are the containers of editors
+
+  # Background color of an editor group (shows up when dragging editor groups around)
   editorGroup.background:
   # Color to separate multiple editor groups from each other
   editorGroup.border: *DarkPurple
@@ -336,7 +377,7 @@ colors:
   editorGroupHeader.noTabsBackground:
   # Background color of the Tabs container
   editorGroupHeader.tabsBackground: *BlackPurple1
-  # Border color of the editor group title header when tabs are enabled. Editor groups are the containers of editors
+  # Border color of the editor group title header when tabs are enabled
   editorGroupHeader.tabsBorder: *DarkPurple3
 
 # -----------------------------------------------------------------------------
@@ -484,11 +525,11 @@ colors:
   editorOverviewRuler.border:
   editorOverviewRuler.findMatchForeground:
   editorOverviewRuler.rangeHighlightForeground:
-  # Color of the selection in the overview ruler (must be transparent)
+  # Color of the selection in the overview ruler. TRANSPARENT
   editorOverviewRuler.selectionHighlightForeground:
-  # Color of the word highlights in the overview ruler (must be transparent)
+  # Color of the word highlights in the overview ruler. TRANSPARENT
   editorOverviewRuler.wordHighlightForeground:
-  # Color of the word highlights in the overview ruler for strong matches (must be transparent)
+  # Color of the word highlights in the overview ruler for strong matches. TRANSPARENT
   editorOverviewRuler.modifiedForeground:
   editorOverviewRuler.wordHighlightStrongForeground:
   editorOverviewRuler.addedForeground:
@@ -649,29 +690,67 @@ colors:
   # Standard Status Bar background color
   statusBar.background: *BlackPurple1
   # Status Bar foreground color
-  statusBar.foreground:
+  statusBar.foreground: *DarkPurple6
   # Status Bar border color separating the Status Bar and editor
   statusBar.border: *DarkPurple
+
   # Status Bar background color when a program is being debugged
-  statusBar.debuggingBackground:
+  statusBar.debuggingBackground: *DarkPurple6
   # Status Bar foreground color when a program is being debugged
-  statusBar.debuggingForeground:
+  statusBar.debuggingForeground: *BlackPurple1
+  # Status Bar border color separating the Status Bar and editor when a program is being debugged
+  statusBar.debuggingBorder: *Purple
+
   # Status Bar foreground color when no folder is opened
-  statusBar.noFolderBackground:
+  statusBar.noFolderBackground: *BlackPurple1
   # Status Bar background color when no folder is opened
-  statusBar.noFolderForeground:
+  statusBar.noFolderForeground: *DarkPurple6
+  # Status Bar border color separating the Status Bar and editor when no folder is opened
+  statusBar.noFolderBorder: *DarkPurple6
+
   # Status Bar item background color when clicking
-  statusBarItem.activeBackground:
+  statusBarItem.activeBackground: *DarkPurple3
   # Status Bar item background color when hovering
-  statusBarItem.hoverBackground:
-  # Status Bar prominent items background color. Prominent items stand out from other Status Bar entries to indicate importance
+  statusBarItem.hoverBackground: *DarkPurple1
+  # Status bar item foreground color when hovering
+  statusBarItem.hoverForeground: *Purple
+  
+  ## Prominent items stand out from other Status Bar entries to indicate importance
+  # Status Bar prominent items foreground color
+  statusBarItem.prominentForeground: *Purple
+  # Status Bar prominent items background color
   statusBarItem.prominentBackground:
-  # Status Bar prominent items background color when hovering. Prominent items stand out from other Status Bar entries to indicate importance
+  # Status Bar prominent items background color when hovering
   statusBarItem.prominentHoverBackground:
+  # Status bar prominent items foreground color when hovering
+  statusBarItem.prominentHoverForeground:
+  
   # Background color for the remote indicator on the status bar
   statusBarItem.remoteForeground:
   # Foreground color for the remote indicator on the status bar
   statusBarItem.remoteBackground:
+  # Background color for the remote indicator on the status bar when hovering
+  statusBarItem.remoteHoverBackground: 
+  # Foreground color for the remote indicator on the status bar when hovering
+  statusBarItem.remoteHoverForeground:
+
+  # Status bar error items background color
+  statusBarItem.errorBackground:
+  # Status bar error items foreground color
+  statusBarItem.errorForeground: *Red
+  # Status bar error items background color when hovering
+  statusBarItem.errorHoverBackground: 
+  # Status bar error items foreground color when hovering
+  statusBarItem.errorHoverForeground:
+
+  # Status bar warning items background color
+  statusBarItem.warningBackground: 
+  # Status bar warning items foreground color
+  statusBarItem.warningForeground: *Orange
+  # Status bar warning items background color when hovering
+  statusBarItem.warningHoverBackground: 
+  # Status bar warning items foreground color when hovering
+  statusBarItem.warningHoverForeground: 
 
 # -----------------------------------------------------------------------------
 # Window border (macOS Only)
@@ -690,10 +769,14 @@ colors:
   titleBar.activeBackground: *BlackPurple1
   # Title Bar foreground when the window is active
   titleBar.activeForeground:
+
   # Title Bar background when the window is inactive
-  titleBar.inactiveBackground:
+  titleBar.inactiveBackground: *BlackPurple1
   # Title Bar foreground when the window is inactive
-  titleBar.inactiveForeground:
+  titleBar.inactiveForeground: *DarkPurple3
+
+  # Title bar border color
+  titleBar.border: *BlackPurple1
 
 # -----------------------------------------------------------------------------
 # Extensions
