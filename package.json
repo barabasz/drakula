@@ -1,7 +1,7 @@
 {
 	"name": "drakula-theme",
 	"displayName": "Drakula",
-	"description": "Dark Dracula theme for Visual Studio Code",
+	"description": "A dark Dracula theme perfect for night owls and basement dwellers, featuring a sleek and minimalistic design.",
 	"license": "MIT",
 	"version": "0.4.2",
 	"publisher": "barabasz",
@@ -9,14 +9,17 @@
 		"build": "node ./scripts/build.js",
 		"lint": "node ./scripts/lint.js",
 		"package": "vsce package -o ./bin",
-		"vscode:prepublish": "npm run build",
-		"vsce-publish": "vsce publish"
+		"publish": "vsce publish"
 	},
 	"homepage": "https://drakula.barabasz.in",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/barabasz/drakula.git"
 	},
+	"galleryBanner": {
+		"color": "#48585E",
+		"theme": "dark"
+	  },
 	"bugs": {
 		"url": "https://github.com/barabasz/drakula/issues"
 	},
@@ -37,6 +40,7 @@
 		"flat",
 		"midnight",
 		"minimal",
+		"minimalistic",
 		"night",
 		"purple",
 		"theme",

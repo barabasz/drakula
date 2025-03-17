@@ -1,6 +1,6 @@
 # Drakula
 
-**Drakula** is a dark theme for [Visual Studio Code](https://github.com/microsoft/vscode). This theme is recommended for people who like the [Dracula](https://en.wikipedia.org/wiki/Dracula_(color_scheme)) color scheme, created by [Zeno Rocha](https://zenorocha.com), but prefer more flat and darker UI than the one available in most themes using this scheme. Inspired by [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night), [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme), and [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) themes.
+**Drakula** is a dark theme designed for [Visual Studio Code](https://github.com/microsoft/vscode). This theme is particularly suited for individuals who appreciate the [Dracula](https://en.wikipedia.org/wiki/Dracula_(color_scheme)) color scheme, developed by [Zeno Rocha](https://zenorocha.com), yet prefer a flatter and darker user interface compared to what is typically offered in most themes utilizing this scheme. It draws inspiration from the [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night), [GitHub Dark](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme), and [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) themes.
 
 **Primary foreground colors**:
 
@@ -26,6 +26,8 @@
 * go to `View` →  `Command Palette` or press `Cmd+Shift+P`  (`Ctrl+Shift+P` on Windows)
 * enter `Install Extension`
 * search for `Drakula` and select it or press return to install
+
+Finally, I would greatly appreciate it if you could rate this theme with [5 stars](https://marketplace.visualstudio.com/items?itemName=barabasz.drakula-theme&ssr=false#review-details)!
 
 ## Suggested editor settings
 
