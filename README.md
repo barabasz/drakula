@@ -2,7 +2,7 @@
 
 **Drakula** is a dark theme designed for [Visual Studio Code](https://github.com/microsoft/vscode). This theme is particularly suited for individuals who appreciate the [Dracula](https://en.wikipedia.org/wiki/Dracula_(color_scheme)) color scheme, developed by [Zeno Rocha](https://zenorocha.com), yet prefer a flatter and darker user interface compared to what is typically offered in most themes utilizing this scheme. It draws inspiration from the [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night), [GitHub Dark](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme), and [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) themes.
 
-[Color palettes](#color-palettes) 🟣 [User interface](#user-interface) 🟣 [Installation](#installation)
+[Color palettes](#color-palettes) 🟣 [User interface](#user-interface) 🟣 [Installation](#installation) 🟣 [Suggested settings](#suggested-settings) 🟣 [Customization](#customization) 🟣 [Links & recommendations](#links-and-recommendations) 🟣 [Screenshots](#screenshots)
 
 ## Color palettes
 
@@ -39,7 +39,7 @@
 
 Finally, I would greatly appreciate it if you could rate this theme with [5 stars](https://marketplace.visualstudio.com/items?itemName=barabasz.drakula-theme&ssr=false#review-details)!
 
-## Suggested editor settings
+## Suggested settings
 
 Enable JetBrains Mono font (check "Links & recommendation" section below for download link):
 
@@ -121,7 +121,7 @@ Below is an example of disabling the italic font variant for comments:
 }
 ```
 
-## Links & recommendations
+## Links and recommendations
 
 * Font: [JetBrains Mono](https://www.jetbrains.com/lp/mono/) ([Nerd Fonts](https://www.nerdfonts.com/font-downloads) variant)
 * Icons: [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
