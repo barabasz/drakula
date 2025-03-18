@@ -37,6 +37,9 @@ drakula:
     - &PinkBright   '#FF92DF' # Bright Magenta
     - &CyanBright   '#A4FFFF'
   # https://coolors.co/241c30-30253f-3c2f4f-48385e-5e4c7b-735f98
+  dark:
+    - &DarkRed      '#7A0000'
+    - &DarkOrange   '#7A3F00'
   darkPurples:
     - &DarkPurple   '#241C30' # Active tab
     - &DarkPurple1  '#30253f'

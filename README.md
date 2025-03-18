@@ -6,25 +6,34 @@
 
 ## Key features
 
+- dark interface that does not tire the eyes
+- reduced numer of UI colors
+- clear highlighting, selection and searching
+- non-distracting editor highlighting
+
 ## Color palette
 
 ### Primary foreground
 
-![palette](img/palette.png)
+![palette](img/drakula-palette-main.png)
 
 ### Bright foreground
 
-![palette](img/palette-bright.png)
+![palette](img/drakula-palette-bright.png)
 
 ### Primary background/UI
 
-![palette](img/palette-bg.png)
+![palette](img/drakula-palette-ui.png)
+
+### Extra UI and accents
+
+![palette](img/drakula-palette-extra.png)
 
 ## User interface
 
 ### UI example (Python)
 
-![palette](img/example.png)
+![palette](img/drakula-example.png)
 
 ## Installation
 
@@ -136,10 +145,10 @@ Below is an example of disabling the italic font variant for comments:
 
 ### JavaScript and Python
 
-![screenshot](img/js-py.png)
+![screenshot](img/drakula-code-js-py.png)
 
 ### Rust and C++
 
-![screenshot](img/rs-cpp.png)
+![screenshot](img/drakula-code-rs-cpp.png)
 
 ![screenshot](img/icon.png)
