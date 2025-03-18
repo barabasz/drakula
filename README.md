@@ -5,10 +5,11 @@
 **Primary foreground colors**:
 
 ![palette](img/palette.png)
+![palette](img/palette-bright.png)
 
 **Primary background/UI colors**:
 
-![palette](img/palettebg.png)
+![palette](img/palette-bg.png)
 
 **UI example** (Python):
 
