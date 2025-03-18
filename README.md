@@ -2,7 +2,7 @@
 
 **Drakula** is a dark theme designed for [Visual Studio Code](https://github.com/microsoft/vscode). This theme is particularly suited for individuals who appreciate the [Dracula](https://en.wikipedia.org/wiki/Dracula_(color_scheme)) color scheme, developed by [Zeno Rocha](https://zenorocha.com), yet prefer a flatter and darker user interface compared to what is typically offered in most themes utilizing this scheme. It draws inspiration from the [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night), [GitHub Dark](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme), and [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) themes.
 
-[Key features](#key-features) 🟣 [Color palette](#color-palette) 🟣 [User interface](#user-interface) 🟣 [Installation](#installation) 🟣 [Suggested settings](#suggested-settings) 🟣 [Customization](#customization) 🟣 [Links](#links-and-recommendations) 🟣 [Screenshots](#screenshots)
+[Features](#key-features) 🟣 [Colors](#color-palette) 🟣 [Interface](#user-interface) 🟣 [Installation](#installation) 🟣 [Settings](#suggested-settings) 🟣 [Customization](#customization) 🟣 [Links](#links-and-recommendations) 🟣 [Screenshots](#screenshots)
 
 ## Key features
 
@@ -17,10 +17,6 @@
 
 ![palette](img/drakula-palette-main.png)
 
-### Bright foreground
-
-![palette](img/drakula-palette-bright.png)
-
 ### Primary background/UI
 
 ![palette](img/drakula-palette-ui.png)
@@ -28,6 +24,10 @@
 ### Extra UI and accents
 
 ![palette](img/drakula-palette-extra.png)
+
+### Bright foreground (highlights and terminal)
+
+![palette](img/drakula-palette-bright.png)
 
 ## User interface
 
