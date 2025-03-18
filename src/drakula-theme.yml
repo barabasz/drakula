@@ -36,7 +36,7 @@ drakula:
     - &PurpleBright '#D6ACFF'
     - &PinkBright   '#FF92DF' # Bright Magenta
     - &CyanBright   '#A4FFFF'
-  # https://coolors.co/241c30-30253f-3c2f4f-48385e-5e4c7b-735f98
+ # https://coolors.co/282a36-44475a-7a0000-7a3f00-6272a4-9879c9-de86e0-e9aeea
   dark:
     - &DarkRed      '#7A0000'
     - &DarkOrange   '#7A3F00'
@@ -58,7 +58,6 @@ drakula:
     - &PurpleT30    '#BD93F94D' # 30%
     - &PurpleT50    '#BD93F980' # 50%
     - &PurpleT80    '#BD93F9CC' # 80%
-  # https://coolors.co/0c0a10-120f18-181320-1e1828
   blackPurples:
     - &BlackPurple  '#181320' # Editor & Side Bar background
     - &BlackPurple1 '#1E1828' # Status Bar & Activity Bar background

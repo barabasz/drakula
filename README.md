@@ -151,4 +151,6 @@ Below is an example of disabling the italic font variant for comments:
 
 ![screenshot](img/drakula-code-rs-cpp.png)
 
-![screenshot](img/icon.png)
+<p align="center">
+  <img src="img/icon.png" width="300" height="300">
+</p>
