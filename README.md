@@ -2,7 +2,7 @@
 
 **Drakula** is a dark theme designed for [Visual Studio Code](https://github.com/microsoft/vscode). This theme is particularly suited for individuals who appreciate the [Dracula](https://en.wikipedia.org/wiki/Dracula_(color_scheme)) color scheme, developed by [Zeno Rocha](https://zenorocha.com), yet prefer a flatter and darker user interface compared to what is typically offered in most themes utilizing this scheme. It draws inspiration from the [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night), [GitHub Dark](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme), and [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) themes.
 
-[Features](#key-features) <small>🟣</small> [Colors](#color-palette) 🟣 [Interface](#user-interface) 🟣 [Installation](#installation) 🟣 [Settings](#suggested-settings) 🟣 [Customization](#customization) 🟣 [Font](#recommended-fonts) 🟣 [Links](#links-and-acknowledgments) 🟣 [Screenshots](#screenshots)
+[Features](#key-features) <span style="font-size:80%">🟣</span> [Colors](#color-palette) 🟣 [Interface](#user-interface) 🟣 [Installation](#installation) 🟣 [Settings](#suggested-settings) 🟣 [Customization](#customization) 🟣 [Font](#recommended-fonts) 🟣 [Links](#links-and-acknowledgments) 🟣 [Screenshots](#screenshots)
 
 ## Key features
 
@@ -134,7 +134,7 @@ Below is an example of disabling the italic font variant for comments:
 
 ## Recommended fonts
 
-I highly recommend below font to be used in
+I strongly recommend the following fonts for use in IDEs and terminals:
 
 ### Commit Mono
 
