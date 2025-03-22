@@ -180,4 +180,3 @@ I strongly recommend the following fonts for use in IDEs and terminals:
   <img src="img/icon.png" width="300" height="300">
 </p>
 
-<span style="font-size: x-small;">🟣</span> 🟣
