@@ -138,9 +138,9 @@ I highly recommend below font to be used in
 
 ### Commit Mono
 
-* download and install Commit Mono Nerd Font version [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CommitMono.zip)
+* download and install [Commit Mono](https://commitmono.com) Nerd Font version [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CommitMono.zip)
 * or simply use brew: `brew install font-commit-mono-nerd-font`
-* use below wsttings in VSCode's settings.json
+* paste or relpace below settings in VSCode's `settings.json`
 
 ```json
     "editor.fontFamily": "CommitMono Nerd Font",
@@ -149,9 +149,9 @@ I highly recommend below font to be used in
 
 ### JetBrains Mono
 
-* download and install JetBrains Mono Nerd Font version [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip)
+* download and install [JetBrains Mono](https://www.jetbrains.com/lp/mono/) Nerd Font version [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip)
 * or simply use brew: `brew install font-jetbrains-mono-nerd-font`
-* use below settings in VSCode's settings.json
+* paste or relpace below settings in VSCode's `settings.json`
 
 ```json
     "editor.fontFamily": "JetBrainsMono NF",
@@ -160,7 +160,6 @@ I highly recommend below font to be used in
 
 ## Links and acknowledgments
 
-* Font: [JetBrains Mono](https://www.jetbrains.com/lp/mono/) ([Nerd Fonts](https://www.nerdfonts.com/font-downloads) variant)
 * Icons: [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
 * Other dark themes:
   * [Github](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) (`Dark Default` variant)
