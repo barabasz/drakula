@@ -2,14 +2,14 @@
 
 **Drakula** is a dark theme designed for [Visual Studio Code](https://github.com/microsoft/vscode). This theme is particularly suited for individuals who appreciate the [Dracula](https://en.wikipedia.org/wiki/Dracula_(color_scheme)) color scheme, developed by [Zeno Rocha](https://zenorocha.com), yet prefer a flatter and darker user interface compared to what is typically offered in most themes utilizing this scheme. It draws inspiration from the [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night), [GitHub Dark](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme), and [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) themes.
 
-[Features](#key-features) 🟣 [Colors](#color-palette) 🟣 [Interface](#user-interface) 🟣 [Installation](#installation) 🟣 [Settings](#suggested-settings) 🟣 [Customization](#customization) 🟣 [Links](#links-and-recommendations) 🟣 [Screenshots](#screenshots)
+[Features](#key-features) 🟣 [Colors](#color-palette) 🟣 [Interface](#user-interface) 🟣 [Installation](#installation) 🟣 [Settings](#suggested-settings) 🟣 [Customization](#customization) 🟣 [Font](#recommended-fonts) 🟣 [Links](#links-and-acknowledgments) 🟣 [Screenshots](#screenshots)
 
 ## Key features
 
-- dark interface that does not tire the eyes
-- reduced numer of UI colors
-- clear highlighting, selection and searching
-- non-distracting editor highlighting
+- non-distracting, nearly flat user interface  
+- dark theme that minimizes eye strain  
+- reduced number of UI colors  
+- clear differentiation between highlighting, selection, and searching  
 
 ## Color palette
 
@@ -132,7 +132,33 @@ Below is an example of disabling the italic font variant for comments:
 }
 ```
 
-## Links and recommendations
+## Recommended fonts
+
+I highly recommend below font to be used in
+
+### Commit Mono
+
+* download and install Commit Mono Nerd Font version [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CommitMono.zip)
+* or simply use brew: `brew install font-commit-mono-nerd-font`
+* use below wsttings in VSCode's settings.json
+
+```json
+    "editor.fontFamily": "CommitMono Nerd Font",
+    "editor.fontLigatures": "'cv02', 'cv07', 'cv08', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05'",
+```
+
+### JetBrains Mono
+
+* download and install JetBrains Mono Nerd Font version [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip)
+* or simply use brew: `brew install font-jetbrains-mono-nerd-font`
+* use below settings in VSCode's settings.json
+
+```json
+    "editor.fontFamily": "JetBrainsMono NF",
+    "editor.fontLigatures": true,
+```
+
+## Links and acknowledgments
 
 * Font: [JetBrains Mono](https://www.jetbrains.com/lp/mono/) ([Nerd Fonts](https://www.nerdfonts.com/font-downloads) variant)
 * Icons: [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
