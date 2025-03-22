@@ -3,7 +3,7 @@
 	"displayName": "Drakula",
 	"description": "A dark Dracula theme perfect for night owls and basement dwellers, featuring a sleek and minimalistic design.",
 	"license": "MIT",
-	"version": "0.4.5",
+	"version": "0.5.0",
 	"publisher": "barabasz",
 	"scripts": {
 		"build": "node ./scripts/build.js",
