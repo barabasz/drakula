@@ -2,7 +2,7 @@
 
 **Drakula** is a dark theme designed for [Visual Studio Code](https://github.com/microsoft/vscode). This theme is particularly suited for individuals who appreciate the [Dracula](https://en.wikipedia.org/wiki/Dracula_(color_scheme)) color scheme, developed by [Zeno Rocha](https://zenorocha.com), yet prefer a flatter and darker user interface compared to what is typically offered in most themes utilizing this scheme. It draws inspiration from the [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night), [GitHub Dark](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme), and [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) themes.
 
-[Features](#key-features) 🟣 [Colors](#color-palette) 🟣 [Interface](#user-interface) 🟣 [Installation](#installation) 🟣 [Settings](#suggested-settings) 🟣 [Customization](#customization) 🟣 [Font](#recommended-fonts) 🟣 [Links](#links-and-acknowledgments) 🟣 [Screenshots](#screenshots)
+[Features](#key-features) 🟣 [Colors](#color-palette) 🟣 [Interface](#user-interface) 🟣 [Installation](#installation) 🟣 [Settings](#suggested-editor-settings) 🟣 [Customization](#customization) 🟣 [Font](#recommended-fonts) 🟣 [Links](#links-and-acknowledgments) 🟣 [Screenshots](#screenshots)
 
 ## Key features
 
@@ -50,20 +50,7 @@
 
 Finally, I would greatly appreciate it if you could rate this theme with [5 stars](https://marketplace.visualstudio.com/items?itemName=barabasz.drakula-theme&ssr=false#review-details)!
 
-## Suggested settings
-
-Enable JetBrains Mono font (check "Links & recommendation" section below for download link):
-
-```json
-"editor.fontFamily": "JetBrainsMono NF"
-```
-
-Reccomended font size with enabled ligatures:
-
-```json
-"editor.fontLigatures": true,
-"editor.fontSize": 13
-```
+## Suggested editor settings
 
 Smooth cursor behavior and csrolling for better experience:
 
@@ -155,7 +142,16 @@ I strongly recommend the following fonts for use in IDEs and terminals:
 
 ```json
     "editor.fontFamily": "JetBrainsMono NF",
-    "editor.fontLigatures": true,
+    "editor.fontLigatures": "'calt', 'cv02', 'cv08', 'cv12', 'cv17', 'cv18', 'cv19', 'cv20'",
+```
+
+### Common font settings
+
+```json
+    "editor.fontWeight": "400",
+    "editor.fontSize": 13,
+    "editor.letterSpacing": 0.1,
+    "editor.lineHeight": 1.45,
 ```
 
 ## Links and acknowledgments
