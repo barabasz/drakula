@@ -13,11 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- 
+- updated README.md
 
 ### Fixed
 
-- 
+- highlighting: commands in shell scripts
 
 ## [0.4.5] - 2025-03-18
 

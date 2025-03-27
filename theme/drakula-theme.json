@@ -1032,6 +1032,18 @@
                 "foreground": "#F1FA8C",
                 "fontStyle": "bold"
             }
+        },
+        {
+            "name": "Commands in shell scripts",
+            "scope": [
+                "support.function.builtin.shell",
+                "entity.name.command.shell",
+                "meta.statement.command.shell"
+            ],
+            "settings": {
+                "foreground": "#50FA7B",
+                "fontStyle": "regular"
+            }
         }
     ]
 }

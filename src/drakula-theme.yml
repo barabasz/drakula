@@ -66,7 +66,7 @@ drakula:
     - &Violet       '#DE86E0'
 
 # #############################################################################
-# UI Colors
+# Drakula UI Colors
 # #############################################################################
 
 colors:
@@ -882,7 +882,7 @@ colors:
   listFilterWidget.noMatchesOutline: 
 
 # #############################################################################
-# Syntaxes (tokenColors)
+# Drakula syntax highlighting 
 # #############################################################################
 
 tokenColors:
@@ -1611,3 +1611,18 @@ tokenColors:
     settings:
       foreground: *Yellow
       fontStyle: bold
+
+# -----------------------------------------------------------------------------
+# Language specific
+# -----------------------------------------------------------------------------
+
+## shellscript
+
+  - name: Commands in shell scripts
+    scope:
+      - support.function.builtin.shell
+      - entity.name.command.shell
+      - meta.statement.command.shell
+    settings:
+      foreground: *Green
+      fontStyle: regular
