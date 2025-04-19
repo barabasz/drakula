@@ -1,4 +1,5 @@
 $schema: vscode://schemas/color-theme
+# https://code.visualstudio.com/api/references/theme-color
 name: Drakula
 description: A dark Dracula theme perfect for night owls and basement dwellers, featuring a sleek and minimalistic design.
 author: github/barabasz
@@ -38,8 +39,8 @@ drakula:
     - &CyanBright   '#A4FFFF'
  # https://coolors.co/282a36-44475a-7a0000-7a3f00-6272a4-9879c9-de86e0-e9aeea
   dark:
-    - &DarkRed      '#7A0000'
-    - &DarkOrange   '#7A3F00'
+    - &DarkRed      '#802a2a' # 50%
+    - &DarkOrange   '#805c36' # 50%
   darkPurples:
     - &DarkPurple   '#241C30' # Active tab
     - &DarkPurple1  '#30253f'
@@ -270,9 +271,9 @@ colors:
 # -----------------------------------------------------------------------------
 
   # List/Tree background color for the selected item when the list/tree is active
-  list.activeSelectionBackground: *PurpleT30
+  list.activeSelectionBackground: *BlackPurple1
   # List/Tree foreground color for the selected item when the list/tree is active
-  list.activeSelectionForeground:
+  list.activeSelectionForeground: *DarkPurple6
   # List/Tree drag and drop background when moving items around using the mouse
   list.dropBackground: *PurpleT15
   # List/Tree background color for the focused item when the list/tree is active
@@ -335,7 +336,7 @@ colors:
   # Side Bar background color
   sideBar.background: *BlackPurple
   # Side Bar foreground color
-  sideBar.foreground:
+  sideBar.foreground: *DarkPurple4
   # Side Bar border color on the side separating the editor
   sideBar.border: *DarkPurple
 
@@ -557,14 +558,23 @@ colors:
   editorGutter.deletedBackground:
 
 # -----------------------------------------------------------------------------
-# Explorer Colors
+# Git Colors (Explorer)
 # -----------------------------------------------------------------------------
 
-  gitDecoration.modifiedResourceForeground:
-  gitDecoration.deletedResourceForeground:
-  gitDecoration.untrackedResourceForeground:
-  gitDecoration.ignoredResourceForeground:
-  gitDecoration.conflictingResourceForeground:
+  # Color for added Git resources
+  gitDecoration.addedResourceForeground: *Green
+  # Color for modified Git resources
+  gitDecoration.modifiedResourceForeground: *Orange
+  # Color for deleted Git resources
+  gitDecoration.deletedResourceForeground: *Red
+  # Color for renamed or copied Git resources
+  gitDecoration.renamedResourceForeground: *Purple
+  # Color for untracked Git resources
+  gitDecoration.untrackedResourceForeground: *Green
+  # Color for ignored Git resources
+  gitDecoration.ignoredResourceForeground: *DarkPurple3
+  # Color for conflicting Git resources
+  gitDecoration.conflictingResourceForeground: *Red
 
 # -----------------------------------------------------------------------------
 # Diff Editor Colors
@@ -580,11 +590,11 @@ colors:
   diffEditor.removedTextBorder:
 
 # -----------------------------------------------------------------------------
-# Editor Widget Colors
+# Editor Widgets
 # -----------------------------------------------------------------------------
 
   # Foreground color of editor widgets, such as find/replace
-  editorWidget.foreground:
+  editorWidget.foreground: *PurpleBright
   # Background color of editor widgets, such as Find/Replace
   editorWidget.background: *DarkPurple
   # Border color of the editor widget unless the widget does not contain a border or defines its own border color
@@ -592,16 +602,28 @@ colors:
   # Border color of the resize bar of editor widgets
   editorWidget.resizeBorder: *Purple
 
+# -----------------------------------------------------------------------------
+# Editor Suggest Widget
+# -----------------------------------------------------------------------------
+
   # Background color of the suggestion widget
-  editorSuggestWidget.background:
+  editorSuggestWidget.background: *BlackPurple
   # Border color of the suggestion widget
-  editorSuggestWidget.border:
+  editorSuggestWidget.border: *DarkPurple3
   # Foreground color of the suggestion widget
-  editorSuggestWidget.foreground:
+  editorSuggestWidget.foreground: *Blue
   # Color of the match highlights in the suggestion widget
-  editorSuggestWidget.highlightForeground:
+  editorSuggestWidget.highlightForeground: *Purple
+  # Color of the match highlights in the suggest widget when an item is focused
+  editorSuggestWidget.focusHighlightForeground: *White
+  # Foreground color of the selected entry in the suggest widget
+  editorSuggestWidget.selectedForeground: *PurpleBright
   # Background color of the selected entry in the suggestion widget
-  editorSuggestWidget.selectedBackground:
+  editorSuggestWidget.selectedBackground: *DarkPurple2
+
+# -----------------------------------------------------------------------------
+# Editor Hover Widget
+# -----------------------------------------------------------------------------
 
   # Background color of the editor hover
   editorHoverWidget.background:

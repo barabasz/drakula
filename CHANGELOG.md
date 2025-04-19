@@ -5,18 +5,21 @@ All notable changes to the [Drakula](https://drakula.barabasz.in) extension will
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.5.0] - 2025-03-20
+## [0.5.0] - 2025-04-19
 
 ### Added
 
-- 
+- editorSuggestWidget colorization
+- tiny UI tewaks like vertical lines in explorer
 
 ### Changed
 
-- updated README.md
+- editorWidget.foreground to match UI
+- list.activeSelectionForeground
 
 ### Fixed
 
+- sideBar.foreground to better match UI
 - highlighting: commands in shell scripts
 
 ## [0.4.5] - 2025-03-18
