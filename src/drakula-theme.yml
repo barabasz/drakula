@@ -328,8 +328,6 @@ colors:
   activityBar.background: *BlackPurple1
   # Activity bar item foreground color when it is inactive
   activityBar.inactiveForeground: *DarkPurple3
-  # Drag and drop feedback color for the Activity Bar items
-  activityBar.dropBackground: *Pink
   # Activity Bar border color with the Side Bar
   activityBar.border: *BlackPurple1
   # Activity Bar indicator color
