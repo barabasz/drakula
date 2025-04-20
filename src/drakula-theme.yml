@@ -13,56 +13,89 @@ semanticHighlighting: true
 drakula:
   # https://coolors.co/ff5555-ffb86c-f1fa8c-f8f8f2-50fa7b-bd93f9-ff79c6-8be9fd
   regular:
-    - &Black        '#282A36'
-    - &Red          '#FF5555'
-    - &Orange       '#FFB86C'
-    - &Yellow       '#F1FA8C'
-    - &White        '#F8F8F2'  # Foreground
-    - &Green        '#50FA7B'
-    - &Purple       '#BD93F9'
-    - &Pink         '#FF79C6'  # Magenta
-    - &Cyan         '#8BE9FD'
+    - &Black          '#282A36'
+    - &Red            '#FF5555'
+    - &Orange         '#FFB86C'
+    - &Yellow         '#F1FA8C'
+    - &White          '#F8F8F2'
+    - &Green          '#50FA7B'
+    - &Purple         '#BD93F9'
+    - &Pink           '#FF79C6'
+    - &Cyan           '#8BE9FD'
   extra:
-    - &Blue         '#6272A4'  # Comment
-    - &Salmon       '#FF9999'
-    - &Violet       '#DE86E0'
-  # https://coolors.co/ff6e6e-ffc485-ffffa5-ffffff-85ffa7-d6acff-ff92df-a4ffff
+    - &Blue           '#6272A4'
+    - &Salmon         '#FF9999'
+    - &Violet         '#DE86E0'
   bright:
-    - &BlackBright  '#44475A'
-    - &RedBright    '#FF6E6E'
-    - &OrangeBright '#FFC485'
-    - &YellowBright '#FFFFA5'
-    - &WhiteBright  '#FFFFFF'
-    - &GreenBright  '#85FFA7'
-    - &PurpleBright '#D6ACFF'
-    - &PinkBright   '#FF92DF' # Bright Magenta
-    - &CyanBright   '#A4FFFF'
- # https://coolors.co/282a36-44475a-7a0000-7a3f00-6272a4-9879c9-de86e0-e9aeea
-  dark:
-    - &RedDark      '#802a2a' # 80%
-    - &OrangeDark   '#cc9356' # 80%
-    - &PinkDark     '#ce62a0' # 80%
+    - &BlackBright    '#44475A'
+    - &RedBright      '#FF6E6E'
+    - &OrangeBright   '#FFC485'
+    - &YellowBright   '#FFFFA5'
+    - &WhiteBright    '#FFFFFF'
+    - &GreenBright    '#85FFA7'
+    - &PurpleBright   '#D6ACFF'
+    - &PinkBright     '#FF92DF'
+    - &CyanBright     '#A4FFFF'
+  dark: # 75%
+    - &RedDark        '#bf3f3f'
+    - &OrangeDark     '#bf8a50'
+    - &YellowDark     '#b8bf6b'
+    - &WhiteDark      '#bfbfbb'
+    - &GreenDark      '#3dbf5e'
+    - &PurpleDark     '#9271bf'
+    - &PinkDark       '#bf5a93'
+    - &CyanDark       '#69afbf'
+  black: # 40%
+    - &RedBlack       '#662222'
+    - &OrangeBlack    '#66492b'
+    - &YellowBlack    '#626638'
+    - &WhiteBlack     '#666664'
+    - &GreenBlack     '#216631'
+    - &PurpleBlack    '#4e3c66'
+    - &PinkBlack      '#66304f'
+    - &CyanBlack      '#385e66'
   darkPurples:
-    - &DarkPurple   '#241C30' # Active tab
-    - &DarkPurple1  '#30253f'
-    - &DarkPurple2  '#3C2F4F'
-    - &DarkPurple3  '#48385E' # Light lines
-    - &DarkPurple4  '#5E4C7B' # Buttons
-    - &DarkPurple5  '#735F98' # Badges
-    - &DarkPurple6  '#9879C9' # 
+    - &DarkPurple     '#241C30'
+    - &DarkPurple1    '#30253f'
+    - &DarkPurple2    '#3C2F4F'
+    - &DarkPurple3    '#48385E'
+    - &DarkPurple4    '#5E4C7B'
+    - &DarkPurple5    '#735F98'
+    - &DarkPurple6    '#9879C9'
   purplesTransparent:
-    - &PurpleT03    '#BD93F908' #  3%
-    - &PurpleT05    '#BD93F90D' #  5%
-    - &PurpleT10    '#BD93F91A' # 10%
-    - &PurpleT15    '#BD93F926' # 15%
-    - &PurpleT20    '#BD93F933' # 20%
-    - &PurpleT25    '#BD93F940' # 25%
-    - &PurpleT30    '#BD93F94D' # 30%
-    - &PurpleT50    '#BD93F980' # 50%
-    - &PurpleT80    '#BD93F9CC' # 80%
+    - &PurpleT03      '#BD93F908'
+    - &PurpleT05      '#BD93F90D'
+    - &PurpleT10      '#BD93F91A'
+    - &PurpleT15      '#BD93F926'
+    - &PurpleT20      '#BD93F933'
+    - &PurpleT25      '#BD93F940'
+    - &PurpleT30      '#BD93F94D'
+    - &PurpleT50      '#BD93F980'
+    - &PurpleT60      '#BD93F999'
+    - &PurpleT80      '#BD93F9CC'
   blackPurples:
-    - &BlackPurple  '#181320' # Editor & Side Bar background
-    - &BlackPurple1 '#1E1828' # Status Bar & Activity Bar background
+    - &BlackPurple    '#181320'
+    - &BlackPurpleUI  '#1E1828'
+
+# #############################################################################
+# Color matching
+# #############################################################################
+#
+# ### Backgrounds
+#
+# Editor & Side Bar background                *BlackPurple 
+# Status Bar, Activity Bar & Tabs background  *BlackPurpleUI
+# Active Tab, Breadcrums & Bars background    *DarkPurple
+# Bagde background                            *PinkDark
+# Button background                           *DarkPurple4
+#
+# ### Foregrounds
+# 
+# Primary foreground:                         *White
+# Badge foreground:                           *BlackPurple
+# Button foreground:                          *White
+# Comments:                                   *Blue
+# Magenta:                                    *Pink
 
 # #############################################################################
 # Drakula UI Colors
@@ -160,7 +193,7 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Background color of the Command Center
-  commandCenter.background: *BlackPurple1
+  commandCenter.background: *BlackPurpleUI
   # Foreground color of the Command Center
   commandCenter.foreground: *DarkPurple5
   # Border color of the Command Center
@@ -176,7 +209,7 @@ colors:
   # Foreground color of the Command Center when the window is inactive
   commandCenter.inactiveForeground:
   # Border color of the Command Center when the window is inactive
-  commandCenter.inactiveBorder: *BlackPurple1
+  commandCenter.inactiveBorder: *BlackPurpleUI
 
   # Command Center background color when a program is being debugged
   commandCenter.debuggingBackground:
@@ -276,9 +309,9 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Badge foreground color
-  badge.foreground: *Pink
+  badge.foreground: *BlackPurple
   # Badge background color
-  badge.background: *DarkPurple5
+  badge.background: *PinkDark
 
 # -----------------------------------------------------------------------------
 # Progress Bar
@@ -325,15 +358,15 @@ colors:
   # Activity bar foreground color (for example used for the icons)
   activityBar.foreground: *DarkPurple5
   # Activity Bar background color
-  activityBar.background: *BlackPurple1
+  activityBar.background: *BlackPurpleUI
   # Activity bar item foreground color when it is inactive
   activityBar.inactiveForeground: *DarkPurple3
   # Activity Bar border color with the Side Bar
-  activityBar.border: *BlackPurple1
+  activityBar.border: *BlackPurpleUI
   # Activity Bar indicator color
   activityBar.activeBorder: *DarkPurple5
   # Activity Bar indicator background color
-  activityBar.activeBackground: *BlackPurple1
+  activityBar.activeBackground: *BlackPurpleUI
   # Activity notification badge background color
   activityBarBadge.background: *PinkDark
   # Activity notification badge foreground color
@@ -361,7 +394,7 @@ colors:
   # Side Bar title foreground color
   sideBarTitle.foreground: *DarkPurple6
   # Side bar title background color
-  sideBarTitle.background: *BlackPurple1
+  sideBarTitle.background: *BlackPurpleUI
   # Side bar title border color on the bottom, separating the title from the views
   sideBarTitle.border: *DarkPurple3
 
@@ -376,7 +409,7 @@ colors:
   sideBarActivityBarTop.border:
 
   # Background color of sticky scroll in the side bar
-  sideBarStickyScroll.background: *BlackPurple1
+  sideBarStickyScroll.background: *BlackPurpleUI
   # Border color of sticky scroll in the side bar
   sideBarStickyScroll.border: *DarkPurple4
   # Shadow color of sticky scroll in the side bar
@@ -395,7 +428,7 @@ colors:
   # Background color of the editor group title header when Tabs are disabled
   editorGroupHeader.noTabsBackground:
   # Background color of the Tabs container
-  editorGroupHeader.tabsBackground: *BlackPurple1
+  editorGroupHeader.tabsBackground: *BlackPurpleUI
   # Border color of the editor group title header when tabs are enabled
   editorGroupHeader.tabsBorder: *DarkPurple3
 
@@ -418,7 +451,7 @@ colors:
   # Top border for the active tab in an inactive editor group
   tab.unfocusedActiveBorderTop: *DarkPurple4
   # Inactive Tab background color
-  tab.inactiveBackground: *BlackPurple1
+  tab.inactiveBackground: *BlackPurpleUI
   # Inactive Tab foreground color in an active group
   tab.inactiveForeground: *DarkPurple6
   # Active tab foreground color in an inactive editor group
@@ -443,7 +476,7 @@ colors:
   # Color of the editor cursor
   editorCursor.foreground: *PinkBright
   # The background color of the editor cursor
-  editorCursor.background: 
+  editorCursor.background:
   # Color of the primary editor cursor when multiple cursors are present
   editorMultiCursor.primary.foreground: *YellowBright
   # Color of secondary editor cursors when multiple cursors are present
@@ -463,7 +496,7 @@ colors:
   # Background color of a symbol during read-access, for example when reading a variable. TRANSPARENT
   editor.wordHighlightBackground: *PurpleT05
   # Border color of a symbol during read-access, for example when reading a variable
-  editor.wordHighlightBorder: *PurpleT30 # *DarkPurple4
+  editor.wordHighlightBorder: *PurpleT60
   # Background color of a symbol during write-access, for example when writing to a variable. TRANSPARENT
   editor.wordHighlightStrongBackground: 
   # Border color of a symbol during write-access, for example when writing to a variable
@@ -477,7 +510,7 @@ colors:
   editor.foldBackground: *PurpleT20
 
   # Border color of the current search match
-  editor.findMatchBorder: *Purple
+  editor.findMatchBorder: *Orange
   # Color of the current search match
   editor.findMatchBackground: *DarkPurple2
   # Color of the other search matches. TRANSPARENT
@@ -511,9 +544,21 @@ colors:
   # Color of whitespace characters in the editor
   editorWhitespace.foreground:
   # Color of the editor indentation guides
-  editorIndentGuide.background1:
+  editorIndentGuide.background: *PurpleBlack
+  editorIndentGuide.background1: *PurpleBlack
+  editorIndentGuide.background2: *PinkBlack
+  editorIndentGuide.background3: *OrangeBlack
+  editorIndentGuide.background4: *GreenBlack
+  editorIndentGuide.background5: *CyanBlack
+  editorIndentGuide.background6: *RedBlack
   # Color of the active indentation guide
-  editorIndentGuide.activeBackground:
+  editorIndentGuide.activeBackground: *PurpleDark
+  editorIndentGuide.activeBackground1: *PurpleDark
+  editorIndentGuide.activeBackground2: *PinkDark
+  editorIndentGuide.activeBackground3: *OrangeDark
+  editorIndentGuide.activeBackground4: *GreenDark
+  editorIndentGuide.activeBackground5: *CyanDark
+  editorIndentGuide.activeBackground6: *RedDark
   # Color of the editor rulers
   editorRuler.foreground:
 
@@ -733,7 +778,7 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Standard Status Bar background color
-  statusBar.background: *BlackPurple1
+  statusBar.background: *BlackPurpleUI
   # Status Bar foreground color
   statusBar.foreground: *DarkPurple6
   # Status Bar border color separating the Status Bar and editor
@@ -742,12 +787,12 @@ colors:
   # Status Bar background color when a program is being debugged
   statusBar.debuggingBackground: *DarkPurple6
   # Status Bar foreground color when a program is being debugged
-  statusBar.debuggingForeground: *BlackPurple1
+  statusBar.debuggingForeground: *BlackPurpleUI
   # Status Bar border color separating the Status Bar and editor when a program is being debugged
   statusBar.debuggingBorder: *Purple
 
   # Status Bar foreground color when no folder is opened
-  statusBar.noFolderBackground: *BlackPurple1
+  statusBar.noFolderBackground: *BlackPurpleUI
   # Status Bar background color when no folder is opened
   statusBar.noFolderForeground: *DarkPurple6
   # Status Bar border color separating the Status Bar and editor when no folder is opened
@@ -771,9 +816,9 @@ colors:
   statusBarItem.prominentHoverForeground:
   
   # Background color for the remote indicator on the status bar
-  statusBarItem.remoteForeground: *DarkPurple6
+  statusBarItem.remoteForeground: *Pink
   # Foreground color for the remote indicator on the status bar
-  statusBarItem.remoteBackground: *BlackPurple1
+  statusBarItem.remoteBackground: *BlackPurpleUI
   # Background color for the remote indicator on the status bar when hovering
   statusBarItem.remoteHoverBackground: *DarkPurple1
   # Foreground color for the remote indicator on the status bar when hovering
@@ -811,17 +856,17 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Title Bar background when the window is active
-  titleBar.activeBackground: *BlackPurple1
+  titleBar.activeBackground: *BlackPurpleUI
   # Title Bar foreground when the window is active
   titleBar.activeForeground:
 
   # Title Bar background when the window is inactive
-  titleBar.inactiveBackground: *BlackPurple1
+  titleBar.inactiveBackground: *BlackPurpleUI
   # Title Bar foreground when the window is inactive
   titleBar.inactiveForeground: *DarkPurple3
 
   # Title bar border color
-  titleBar.border: *BlackPurple1
+  titleBar.border: *BlackPurpleUI
 
 # -----------------------------------------------------------------------------
 # Extensions
