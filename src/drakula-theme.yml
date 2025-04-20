@@ -1,5 +1,5 @@
 $schema: vscode://schemas/color-theme
-# https://code.visualstudio.com/api/references/theme-color
+reference: https://code.visualstudio.com/api/references/theme-color
 name: Drakula
 description: A dark Dracula theme perfect for night owls and basement dwellers, featuring a sleek and minimalistic design.
 author: github/barabasz
@@ -11,14 +11,9 @@ semanticHighlighting: true
 # #############################################################################
 
 drakula:
-  # Oryginal Dracula light colors
-  
-  base:
-    - &Black        '#282A36'  # Background
-    - &BlackLight   '#44475A'  # Current Line
-    - &Blue         '#6272A4'  # Comment
   # https://coolors.co/ff5555-ffb86c-f1fa8c-f8f8f2-50fa7b-bd93f9-ff79c6-8be9fd
   regular:
+    - &Black        '#282A36'
     - &Red          '#FF5555'
     - &Orange       '#FFB86C'
     - &Yellow       '#F1FA8C'
@@ -27,8 +22,13 @@ drakula:
     - &Purple       '#BD93F9'
     - &Pink         '#FF79C6'  # Magenta
     - &Cyan         '#8BE9FD'
+  extra:
+    - &Blue         '#6272A4'  # Comment
+    - &Salmon       '#FF9999'
+    - &Violet       '#DE86E0'
   # https://coolors.co/ff6e6e-ffc485-ffffa5-ffffff-85ffa7-d6acff-ff92df-a4ffff
   bright:
+    - &BlackBright  '#44475A'
     - &RedBright    '#FF6E6E'
     - &OrangeBright '#FFC485'
     - &YellowBright '#FFFFA5'
@@ -39,8 +39,9 @@ drakula:
     - &CyanBright   '#A4FFFF'
  # https://coolors.co/282a36-44475a-7a0000-7a3f00-6272a4-9879c9-de86e0-e9aeea
   dark:
-    - &DarkRed      '#802a2a' # 50%
-    - &DarkOrange   '#805c36' # 50%
+    - &RedDark      '#802a2a' # 80%
+    - &OrangeDark   '#cc9356' # 80%
+    - &PinkDark     '#ce62a0' # 80%
   darkPurples:
     - &DarkPurple   '#241C30' # Active tab
     - &DarkPurple1  '#30253f'
@@ -62,9 +63,6 @@ drakula:
   blackPurples:
     - &BlackPurple  '#181320' # Editor & Side Bar background
     - &BlackPurple1 '#1E1828' # Status Bar & Activity Bar background
-  extra:
-    - &Salmon       '#FF9999'
-    - &Violet       '#DE86E0'
 
 # #############################################################################
 # Drakula UI Colors
@@ -87,7 +85,7 @@ colors:
   # Shadow color of widgets such as Find/Replace inside the editor
   widget.shadow:
   # Foreground color for description text providing additional information, for example for a label
-  descriptionForeground:
+  descriptionForeground: *Purple
   # Background color of text selections in the workbench (for input fields or text areas)
   selection.background: *PurpleT25
   # Overall foreground color for error messages if not overridden by a component
@@ -96,6 +94,27 @@ colors:
   icon.foreground: *Purple
   # The hover border color for draggable sashes
   sash.hoverBorder:
+
+# -----------------------------------------------------------------------------
+# Text Colors
+# -----------------------------------------------------------------------------
+
+  # Background color for block quotes in text
+  textBlockQuote.background:
+  # Border color for block quotes in text
+  textBlockQuote.border:
+  # Background color for code blocks in text
+  textCodeBlock.background:
+  # Foreground color for links in text
+  textLink.foreground: *Purple
+  # Foreground color for links in text when clicked on and on mouse hover
+  textLink.activeForeground: *Pink
+  # Foreground color for preformatted text segments
+  textPreformat.foreground:
+  # Background color for preformatted text segments
+  textPreformat.background:
+  # Color for text separators
+  textSeparator.foreground:
 
 # -----------------------------------------------------------------------------
 # Banner colors
@@ -113,11 +132,11 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Background color of the terminal if not overridden by a component
-  terminal.background: *Black
+  terminal.background: *BlackPurple
   terminal.foreground: *White
 
   # Standard terminal colors
-  terminal.ansiBlack: *DarkPurple
+  terminal.ansiBlack: *Black
   terminal.ansiRed: *Red
   terminal.ansiGreen: *Green
   terminal.ansiYellow: *Yellow
@@ -127,7 +146,7 @@ colors:
   terminal.ansiWhite: *White
   
   # Bright terminal colors
-  terminal.ansiBrightBlack: *Blue
+  terminal.ansiBrightBlack: *BlackBright
   terminal.ansiBrightRed: *RedBright
   terminal.ansiBrightGreen: *GreenBright
   terminal.ansiBrightYellow: *YellowBright
@@ -196,6 +215,8 @@ colors:
 # Dropdown Control
 # -----------------------------------------------------------------------------
 
+# Dropdown control is NOT used on macOS currently
+
   # Dropdown background
   dropdown.background:
   # Dropdown border
@@ -255,7 +276,7 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Badge foreground color
-  badge.foreground:
+  badge.foreground: *Pink
   # Badge background color
   badge.background: *DarkPurple5
 
@@ -267,13 +288,15 @@ colors:
   progressBar.background: *Purple
 
 # -----------------------------------------------------------------------------
-# List & Trees
+# List & Trees (like the File Explorer)
 # -----------------------------------------------------------------------------
 
+# An active list/tree has keyboard focus, an inactive does not.
+
   # List/Tree background color for the selected item when the list/tree is active
-  list.activeSelectionBackground: *BlackPurple1
+  list.activeSelectionBackground: *DarkPurple1
   # List/Tree foreground color for the selected item when the list/tree is active
-  list.activeSelectionForeground: *DarkPurple6
+  list.activeSelectionForeground: *White
   # List/Tree drag and drop background when moving items around using the mouse
   list.dropBackground: *PurpleT15
   # List/Tree background color for the focused item when the list/tree is active
@@ -283,9 +306,9 @@ colors:
   # List/Tree background when hovering over items using the mouse
   list.hoverBackground: *PurpleT10
   # List/Tree background color for the selected item when the list/tree is inactive
-  list.inactiveSelectionBackground: *PurpleT20
+  list.inactiveSelectionBackground: *DarkPurple
   # List/Tree foreground color for the selected item when the list/tree is inactive
-  list.inactiveSelectionForeground:
+  list.inactiveSelectionForeground: *White
   # Color of warning decorations in the explorer
   list.warningForeground:
   # Color of error decorations in the explorer
@@ -296,7 +319,7 @@ colors:
   list.focusForeground:
 
 # -----------------------------------------------------------------------------
-# Activity Bar
+# Activity Bar (allows fast switching between views of the Side Bar)
 # -----------------------------------------------------------------------------
 
   # Activity bar foreground color (for example used for the icons)
@@ -304,34 +327,31 @@ colors:
   # Activity Bar background color
   activityBar.background: *BlackPurple1
   # Activity bar item foreground color when it is inactive
-  activityBar.inactiveForeground:
+  activityBar.inactiveForeground: *DarkPurple3
   # Drag and drop feedback color for the Activity Bar items
-  activityBar.dropBackground:
+  activityBar.dropBackground: *Pink
   # Activity Bar border color with the Side Bar
-  activityBar.border:
+  activityBar.border: *BlackPurple1
   # Activity Bar indicator color
-  activityBar.activeBorder:
+  activityBar.activeBorder: *DarkPurple5
   # Activity Bar indicator background color
-  activityBar.activeBackground:
+  activityBar.activeBackground: *BlackPurple1
   # Activity notification badge background color
-
-  activityBarBadge.background: *DarkPurple6
+  activityBarBadge.background: *PinkDark
   # Activity notification badge foreground color
   activityBarBadge.foreground: *BlackPurple
   # Foreground color of the warning activity badge
-  activityWarningBadge.foreground:
+  activityWarningBadge.foreground: *BlackPurple
   # Background color of the warning activity badge
   activityWarningBadge.background: *Orange
   # Foreground color of the error activity badge
-  activityErrorBadge.foreground:
+  activityErrorBadge.foreground: *BlackPurple
   # Background color of the error activity badge
   activityErrorBadge.background: *Red
 
 # -----------------------------------------------------------------------------
-# Side Bar
+# Side Bar (container for views like explorer and search)
 # -----------------------------------------------------------------------------
-
-  # The side bar is the container for views like explorer and search
 
   # Side Bar background color
   sideBar.background: *BlackPurple
@@ -342,9 +362,9 @@ colors:
 
   # Side Bar title foreground color
   sideBarTitle.foreground: *DarkPurple6
-  # Side bar title background color.
+  # Side bar title background color
   sideBarTitle.background: *BlackPurple1
-  # Side bar title border color on the bottom, separating the title from the views.
+  # Side bar title border color on the bottom, separating the title from the views
   sideBarTitle.border: *DarkPurple3
 
   # Side Bar section header background color
@@ -352,9 +372,9 @@ colors:
   # Side Bar section header foreground color
   sideBarSectionHeader.foreground: *DarkPurple6
   # Side bar section header border color
-  sideBarSectionHeader.border: #'#ff0000'
+  sideBarSectionHeader.border: *DarkPurple2
 
-  # Border color between the activity bar at the top/bottom and the views.
+  # Border color between the activity bar at the top/bottom and the views
   sideBarActivityBarTop.border:
 
   # Background color of sticky scroll in the side bar
@@ -365,10 +385,8 @@ colors:
   sideBarStickyScroll.shadow:
 
 # -----------------------------------------------------------------------------
-# Editor Groups
+# Editor Groups (containers of editors)
 # -----------------------------------------------------------------------------
-
-  # Editor groups are the containers of editors
 
   # Background color of an editor group (shows up when dragging editor groups around)
   editorGroup.background:
@@ -390,7 +408,7 @@ colors:
   # Active Tab background color
   tab.activeBackground: *DarkPurple
   # Active Tab foreground color in an active group
-  tab.activeForeground: *DarkPurple6
+  tab.activeForeground: *White
   # Border to separate Tabs from each other
   tab.border: *BlackPurple
   # A border drawn to the top of the active tab
@@ -404,7 +422,7 @@ colors:
   # Inactive Tab background color
   tab.inactiveBackground: *BlackPurple1
   # Inactive Tab foreground color in an active group
-  tab.inactiveForeground: *DarkPurple4
+  tab.inactiveForeground: *DarkPurple6
   # Active tab foreground color in an inactive editor group
   tab.unfocusedActiveForeground:
   # Inactive tab foreground color in an inactive editor group
@@ -564,7 +582,7 @@ colors:
   # Color for added Git resources
   gitDecoration.addedResourceForeground: *Green
   # Color for modified Git resources
-  gitDecoration.modifiedResourceForeground: *Orange
+  gitDecoration.modifiedResourceForeground: *OrangeDark
   # Color for deleted Git resources
   gitDecoration.deletedResourceForeground: *Red
   # Color for renamed or copied Git resources
@@ -697,15 +715,20 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Panel background color
-  panel.background:
+  panel.background: *DarkPurple
   # Panel border color on the top separating to the editor
-  panel.border:
+  panel.border: *DarkPurple3
+  # Drag and drop feedback color for the panel titles
+  panel.dropBorder: *Purple
+
   # Border color for the active panel title
-  panelTitle.activeBorder:
+  panelTitle.activeBorder: *DarkPurple6
   # Title color for the active panel
-  panelTitle.activeForeground:
+  panelTitle.activeForeground: *White
   # Title color for the inactive panel
-  panelTitle.inactiveForeground:
+  panelTitle.inactiveForeground: *DarkPurple6
+  # Panel title border color on the bottom, separating the title from the views
+  panelTitle.border: *DarkPurple3
 
 # -----------------------------------------------------------------------------
 # Status Bar Colors
@@ -737,11 +760,11 @@ colors:
   # Status Bar item background color when hovering
   statusBarItem.hoverBackground: *DarkPurple1
   # Status bar item foreground color when hovering
-  statusBarItem.hoverForeground: *Purple
+  statusBarItem.hoverForeground: *White
   
   ## Prominent items stand out from other Status Bar entries to indicate importance
   # Status Bar prominent items foreground color
-  statusBarItem.prominentForeground: *Purple
+  statusBarItem.prominentForeground: *Pink
   # Status Bar prominent items background color
   statusBarItem.prominentBackground:
   # Status Bar prominent items background color when hovering
@@ -750,13 +773,13 @@ colors:
   statusBarItem.prominentHoverForeground:
   
   # Background color for the remote indicator on the status bar
-  statusBarItem.remoteForeground:
+  statusBarItem.remoteForeground: *DarkPurple6
   # Foreground color for the remote indicator on the status bar
-  statusBarItem.remoteBackground:
+  statusBarItem.remoteBackground: *BlackPurple1
   # Background color for the remote indicator on the status bar when hovering
-  statusBarItem.remoteHoverBackground: 
+  statusBarItem.remoteHoverBackground: *DarkPurple1
   # Foreground color for the remote indicator on the status bar when hovering
-  statusBarItem.remoteHoverForeground:
+  statusBarItem.remoteHoverForeground: *White
 
   # Status bar error items background color
   statusBarItem.errorBackground:
@@ -768,7 +791,7 @@ colors:
   statusBarItem.errorHoverForeground:
 
   # Status bar warning items background color
-  statusBarItem.warningBackground: 
+  statusBarItem.warningBackground:
   # Status bar warning items foreground color
   statusBarItem.warningForeground: *Orange
   # Status bar warning items background color when hovering
@@ -833,12 +856,22 @@ colors:
 # Welcome Page
 # -----------------------------------------------------------------------------
 
-  # Background color for the buttons on the Welcome page
-  welcomePage.buttonBackground:
-  # Hover background color for the buttons on the Welcome page
-  welcomePage.buttonHoverBackground:
-  # Background color for the embedded editors on the Interactive Playground
+  # Background color for the Welcome page
+  welcomePage.background: *BlackPurple
+  # Foreground color for the Welcome page progress bars
+  welcomePage.progress.background: *DarkPurple3
+  # Background color for the Welcome page progress bars
+  welcomePage.progress.foreground: *DarkPurple5
+  # Background color for the tiles on the Welcome page
+  welcomePage.tileBackground: *DarkPurple
+  # Hover background color for the tiles on the Welcome page
+  welcomePage.tileHoverBackground:
+  # Border color for the tiles on the Welcome page
+  welcomePage.tileBorder:
+  # Background color for the embedded editors on the Interactive Playground.
   walkThrough.embeddedEditorBackground:
+  # Foreground color of the heading of each walkthrough step
+  walkthrough.stepTitle.foreground: *Green
 
 # -----------------------------------------------------------------------------
 # Setting Editor

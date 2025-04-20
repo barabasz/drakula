@@ -9,18 +9,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- editorSuggestWidget colorization
+- editorSuggestWidget coloring
+- welcomePage coloring
 - tiny UI tewaks like vertical lines in explorer
 
 ### Changed
 
 - editorWidget.foreground to match UI
 - list.activeSelectionForeground
+- activityBar coloring
+- list.inactiveSelection and active tab foreground
+- tab.activeForeground to white
+- statusBarItem.hoverForeground to white
+- statusBarItem.remote coloring
+- statusBarItem.prominentForeground to pink
+- panel. and panelTitle. coloring
 
 ### Fixed
 
+- terminal.background = editor.background
+- activityBarBadge to pink
+- badge.foreground to pink
 - sideBar.foreground to better match UI
 - highlighting: commands in shell scripts
+- sideBarSectionHeader.border
 
 ## [0.4.5] - 2025-03-18
 
