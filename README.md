@@ -125,20 +125,11 @@ Below is an example of disabling the italic font variant for comments:
 
 ## Recommended fonts
 
-I strongly recommend the following fonts for use in IDEs and terminals:
-
-### Commit Mono
-
-* download and install [Commit Mono](https://commitmono.com) Nerd Font version [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CommitMono.zip)
-* or simply use brew: `brew install font-commit-mono-nerd-font`
-* paste or relpace below settings in VSCode's `settings.json`
-
-```json
-    "editor.fontFamily": "CommitMono Nerd Font",
-    "editor.fontLigatures": "'cv02', 'cv07', 'cv08', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05'",
-```
+I strongly recommend the following two fonts for use in IDEs and terminals:
 
 ### JetBrains Mono
+
+Designed by Philipp Nurullin and Konstantin Bulenkov at [JetBrains](https://www.jetbrains.com).
 
 * download and install [JetBrains Mono](https://www.jetbrains.com/lp/mono/) Nerd Font version [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip)
 * or simply use brew: `brew install font-jetbrains-mono-nerd-font`
@@ -147,6 +138,19 @@ I strongly recommend the following fonts for use in IDEs and terminals:
 ```json
     "editor.fontFamily": "JetBrainsMono NF",
     "editor.fontLigatures": "'calt', 'cv02', 'cv08', 'cv12', 'cv17', 'cv18', 'cv19', 'cv20'",
+```
+
+### Commit Mono
+
+Designed by Eigil Nikolajsen (please [support his work](https://buymeacoffee.com/eigilnikolajsen)).
+
+* download and install [Commit Mono](https://commitmono.com) Nerd Font version [here](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CommitMono.zip)
+* or simply use brew: `brew install font-commit-mono-nerd-font`
+* paste or relpace below settings in VSCode's `settings.json`
+
+```json
+    "editor.fontFamily": "CommitMono Nerd Font",
+    "editor.fontLigatures": "'cv02', 'cv07', 'cv08', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05'",
 ```
 
 ### Common font settings
