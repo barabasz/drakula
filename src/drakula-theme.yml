@@ -107,7 +107,7 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Overall border color for focused elements if not overridden by a component
-  focusBorder: *DarkPurple4 #*Purple
+  focusBorder: *DarkPurple4
   # Overall foreground color if not overridden by a component
   foreground: *White
   # Overall foreground for disabled elements if not overridden by a component
@@ -356,7 +356,7 @@ colors:
   # Activity bar foreground color (for example used for the icons)
   activityBar.foreground: *DarkPurple5
   # Activity Bar background color
-  activityBar.background: *BlackPurple #*BlackPurpleUI
+  activityBar.background: *BlackPurple
   # Activity bar item foreground color when it is inactive
   activityBar.inactiveForeground: *DarkPurple3
   # Activity Bar border color with the Side Bar
@@ -383,25 +383,25 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Side Bar background color
-  sideBar.background: *BlackPurpleUI #*BlackPurple
+  sideBar.background: *BlackPurpleUI
   # Side Bar foreground color
   sideBar.foreground: *DarkPurple6
   # Side Bar border color on the side separating the editor
   sideBar.border: *DarkPurple
 
   # Side Bar title foreground color
-  sideBarTitle.foreground: *Pink #*DarkPurple6
+  sideBarTitle.foreground: *Pink
   # Side bar title background color
   sideBarTitle.background: *BlackPurpleUI
   # Side bar title border color on the bottom, separating the title from the views
   sideBarTitle.border: *DarkPurple3
 
   # Side Bar section header background color
-  sideBarSectionHeader.background: *BlackPurpleUI #*DarkPurple
+  sideBarSectionHeader.background: *BlackPurpleUI
   # Side Bar section header foreground color
-  sideBarSectionHeader.foreground: *PinkDark #*DarkPurple6
+  sideBarSectionHeader.foreground: *PinkDark
   # Side bar section header border color
-  sideBarSectionHeader.border: *BlackPurpleUI #*DarkPurple2
+  sideBarSectionHeader.border: *BlackPurpleUI
 
   # Border color between the activity bar at the top/bottom and the views
   sideBarActivityBarTop.border:
@@ -497,7 +497,7 @@ colors:
   editorMultiCursor.secondary.foreground: *PinkBright
 
   # Color of the editor selection
-  editor.selectionBackground: *PurpleT25 # *DarkPurple3
+  editor.selectionBackground: *PurpleT25
   # Color of the selected text for high contrast.
   editor.selectionForeground:
   # Color for regions with the same content as the selection. TRANSAPRENT
