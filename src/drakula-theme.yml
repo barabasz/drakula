@@ -11,7 +11,6 @@ semanticHighlighting: true
 # #############################################################################
 
 drakula:
-  # https://coolors.co/ff5555-ffb86c-f1fa8c-f8f8f2-50fa7b-bd93f9-ff79c6-8be9fd
   regular:
     - &Black          '#282A36'
     - &Red            '#FF5555'
@@ -108,7 +107,7 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Overall border color for focused elements if not overridden by a component
-  focusBorder: *Purple
+  focusBorder: *DarkPurple4 #*Purple
   # Overall foreground color if not overridden by a component
   foreground: *White
   # Overall foreground for disabled elements if not overridden by a component
@@ -122,7 +121,7 @@ colors:
   # Background color of text selections in the workbench (for input fields or text areas)
   selection.background: *PurpleT25
   # Overall foreground color for error messages if not overridden by a component
-  errorForeground:
+  errorForeground: *RedDark
   # The default color for icons in the workbench
   icon.foreground: *Purple
   # The hover border color for draggable sashes
@@ -296,7 +295,6 @@ colors:
 
   # Scroll Bar shadow to indicate that the view is scrolled
   scrollbar.shadow: *DarkPurple
-  
   # Slider background color when active
   scrollbarSlider.activeBackground:
   # Slider background color
@@ -358,7 +356,7 @@ colors:
   # Activity bar foreground color (for example used for the icons)
   activityBar.foreground: *DarkPurple5
   # Activity Bar background color
-  activityBar.background: *BlackPurpleUI
+  activityBar.background: *BlackPurple #*BlackPurpleUI
   # Activity bar item foreground color when it is inactive
   activityBar.inactiveForeground: *DarkPurple3
   # Activity Bar border color with the Side Bar
@@ -385,25 +383,25 @@ colors:
 # -----------------------------------------------------------------------------
 
   # Side Bar background color
-  sideBar.background: *BlackPurple
+  sideBar.background: *BlackPurpleUI #*BlackPurple
   # Side Bar foreground color
-  sideBar.foreground: *DarkPurple4
+  sideBar.foreground: *DarkPurple6
   # Side Bar border color on the side separating the editor
   sideBar.border: *DarkPurple
 
   # Side Bar title foreground color
-  sideBarTitle.foreground: *DarkPurple6
+  sideBarTitle.foreground: *Pink #*DarkPurple6
   # Side bar title background color
   sideBarTitle.background: *BlackPurpleUI
   # Side bar title border color on the bottom, separating the title from the views
   sideBarTitle.border: *DarkPurple3
 
   # Side Bar section header background color
-  sideBarSectionHeader.background: *DarkPurple
+  sideBarSectionHeader.background: *BlackPurpleUI #*DarkPurple
   # Side Bar section header foreground color
-  sideBarSectionHeader.foreground: *DarkPurple6
+  sideBarSectionHeader.foreground: *PinkDark #*DarkPurple6
   # Side bar section header border color
-  sideBarSectionHeader.border: *DarkPurple2
+  sideBarSectionHeader.border: *BlackPurpleUI #*DarkPurple2
 
   # Border color between the activity bar at the top/bottom and the views
   sideBarActivityBarTop.border:
@@ -436,28 +434,44 @@ colors:
 # Editor Tabs
 # -----------------------------------------------------------------------------
 
-  # Active Tab background color
-  tab.activeBackground: *DarkPurple
+  # Border to separate Tabs from each other
+  tab.border: *BlackPurpleUI
+
   # Active Tab foreground color in an active group
   tab.activeForeground: *White
-  # Border to separate Tabs from each other
-  tab.border: *BlackPurple
-  # A border drawn to the top of the active tab
-  tab.activeBorderTop: *Purple
+  # Active Tab background color
+  tab.activeBackground: *DarkPurple
   # A border drawn to the bottom of the active tab
   tab.activeBorder: *DarkPurple
-  # A border drawn to the bottom of the active tab in an editor group that is not focused
-  tab.unfocusedActiveBorder: *DarkPurple
-  # Top border for the active tab in an inactive editor group
-  tab.unfocusedActiveBorderTop: *DarkPurple4
+  # A border drawn to the top of the active tab
+  tab.activeBorderTop: *Pink
+
   # Inactive Tab background color
   tab.inactiveBackground: *BlackPurpleUI
   # Inactive Tab foreground color in an active group
   tab.inactiveForeground: *DarkPurple6
+
+  tab.unfocusedActiveBorder: *DarkPurple
+  # Top border for the active tab in an inactive editor group
+  tab.unfocusedActiveBorderTop: *DarkPurple4
   # Active tab foreground color in an inactive editor group
   tab.unfocusedActiveForeground:
   # Inactive tab foreground color in an inactive editor group
   tab.unfocusedInactiveForeground:
+
+  # Tab foreground color when hovering
+  tab.hoverForeground:
+  # Tab background color when hovering
+  tab.hoverBackground: *DarkPurple
+  # Border to highlight tabs when hovering
+  tab.hoverBorder:
+  # Tab background color in an unfocused group when hovering
+  tab.unfocusedHoverBackground:
+  # Tab foreground color in an unfocused group when hovering
+  tab.unfocusedHoverForeground: 
+  # Border to highlight tabs in an unfocused group when hovering
+  tab.unfocusedHoverBorder:
+  # A border drawn to the bottom of the active tab in an editor group that is not focused
 
 # -----------------------------------------------------------------------------
 # Editor Colors
@@ -542,7 +556,7 @@ colors:
   editor.snippetFinalTabstopHighlightBorder:
 
   # Color of whitespace characters in the editor
-  editorWhitespace.foreground:
+  editorWhitespace.foreground: *DarkPurple3
   # Color of the editor indentation guides
   editorIndentGuide.background: *PurpleBlack
   editorIndentGuide.background1: *PurpleBlack
@@ -792,11 +806,11 @@ colors:
   statusBar.debuggingBorder: *Purple
 
   # Status Bar foreground color when no folder is opened
-  statusBar.noFolderBackground: *BlackPurpleUI
+  statusBar.noFolderBackground: *BlackPurple
   # Status Bar background color when no folder is opened
   statusBar.noFolderForeground: *DarkPurple6
   # Status Bar border color separating the Status Bar and editor when no folder is opened
-  statusBar.noFolderBorder: *DarkPurple6
+  statusBar.noFolderBorder: *BlackPurple
 
   # Status Bar item background color when clicking
   statusBarItem.activeBackground: *DarkPurple3
@@ -869,15 +883,37 @@ colors:
   titleBar.border: *BlackPurpleUI
 
 # -----------------------------------------------------------------------------
-# Extensions
+# Extensions colors
 # -----------------------------------------------------------------------------
 
   # Extension view button foreground color (for example Install button)
-  extensionButton.prominentForeground:
+  extensionButton.prominentForeground: 
   # Extension view button background color
   extensionButton.prominentBackground:
   # Extension view button background hover color
-  extensionButton.prominentHoverBackground:
+  extensionButton.prominentHoverBackground: 
+  # Button background color for extension actions
+  extensionButton.background:
+  # Button foreground color for extension actions
+  extensionButton.foreground: 
+  # Button background hover color for extension actions
+  extensionButton.hoverBackground: 
+  # Button separator color for extension actions
+  extensionButton.separator: *White
+  # Background color for the remote badge in the extensions view
+  extensionBadge.remoteBackground: 
+  # Foreground color for the remote badge in the extensions view
+  extensionBadge.remoteForeground: 
+  # The icon color for extension ratings
+  extensionIcon.starForeground: *OrangeDark
+  # The icon color for extension verified publisher
+  extensionIcon.verifiedForeground: *PinkDark
+  # The icon color for pre-release extension
+  extensionIcon.preReleaseForeground: *PinkDark
+  # The icon color for extension sponsor
+  extensionIcon.sponsorForeground:
+  # The icon color for private extensions
+  extensionIcon.privateForeground: 
 
 # -----------------------------------------------------------------------------
 # Quick Picker
@@ -927,29 +963,29 @@ colors:
   # The color of the selected setting row border, when the settings list does not have focus
   settings.inactiveSelectedItemBorder:
   # Dropdown background
-  settings.dropdownBackground:         
+  settings.dropdownBackground:
   # Dropdown foreground
-  settings.dropdownForeground:         
+  settings.dropdownForeground:
   # Dropdown border
-  settings.dropdownBorder:             
+  settings.dropdownBorder:
   # Checkbox background
-  settings.checkboxBackground:         
+  settings.checkboxBackground:
   # Checkbox foreground
-  settings.checkboxForeground:         
+  settings.checkboxForeground:
   # Checkbox border
-  settings.checkboxBorder:             
+  settings.checkboxBorder:
   # Text input box background
-  settings.textInputBackground:        
+  settings.textInputBackground:
   # Text input box foreground
-  settings.textInputForeground:        
+  settings.textInputForeground:
   # Text input box border
-  settings.textInputBorder:            
+  settings.textInputBorder:
   # Number input box background
-  settings.numberInputBackground:      
+  settings.numberInputBackground:
   # Number input box foreground
-  settings.numberInputForeground:      
+  settings.numberInputForeground:
   # Number input box border
-  settings.numberInputBorder:          
+  settings.numberInputBorder:
 
 # -----------------------------------------------------------------------------
 # Breadcrumbs

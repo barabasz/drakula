@@ -11,6 +11,16 @@
 - reduced number of UI colors  
 - clear differentiation between highlighting, selection, and searching  
 
+## User interface
+
+### UI example (Python & C)
+
+![palette](img/drakula-example.png)
+
+### Editor example (indent guides, match & search, suggest widget)
+
+![palette](img/drakula-example-editor.png)
+
 ## Color palette
 
 ### Primary foreground
@@ -28,12 +38,6 @@
 ### Bright foreground (highlights and terminal)
 
 ![palette](img/drakula-palette-bright.png)
-
-## User interface
-
-### UI example (Python)
-
-![palette](img/drakula-example.png)
 
 ## Installation
 

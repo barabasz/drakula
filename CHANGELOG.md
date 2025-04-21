@@ -5,6 +5,23 @@ All notable changes to the [Drakula](https://drakula.barabasz.in) extension will
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.2] - 2025-04-21
+
+### Added
+
+- editorWhitespace.foreground to dark purple
+
+## Changed
+
+- focusBorder less intense purple
+- sideBar* reduced colors for more flat design
+- sideBar.background & activityBar.background
+- sideBar.foreground lighter purple to match tabs
+
+## Fixed
+
+- tab.border = tab.inactiveBackground
+
 ## [0.5.1] - 2025-04-20
 
 ### Added
